@@ -32,7 +32,10 @@ from qeeg.ingestion.column_mapper import build_column_schema_with_mmx  # noqa: E
 from qeeg.ingestion.cadence import FAMILY_ENGINE_MAP  # noqa: E402
 from qeeg.storage.export import _FAMILY_UNITS  # noqa: E402
 
-DEFAULT_CSV = Path(r"C:\temp\cardiac_arrest\Test EEGs\4290-1_1684730\20260821_1354_.csv")
+# No default subject. The path named one, and this script's outputs are
+# published. Pass the export explicitly — any Research-Trends or Research
+# panel CSV from the shipped template will do.
+DEFAULT_CSV: Path | None = None
 DEFAULT_MMX = Path(r"C:\ProgramData\Persyst\PedQuEST_Pennsieve_V10_research.mmx")
 
 # Panel identity is derived from instrument count: the V10 template exports the
@@ -144,7 +147,13 @@ def _mmx_power_scale(mmx_path: Path) -> dict[str, str]:
 
 
 def main() -> None:
-    csv_path = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_CSV
+    if len(sys.argv) > 1:
+        csv_path = Path(sys.argv[1])
+    elif DEFAULT_CSV is not None:
+        csv_path = Path(DEFAULT_CSV)
+    else:
+        sys.exit("usage: python scripts/gen_column_map_v10.py <export.csv> "
+                 "[template.mmx]")
     mmx_path = Path(sys.argv[2]) if len(sys.argv) > 2 else DEFAULT_MMX
 
     mmx = parse_mmx(mmx_path)
@@ -235,7 +244,10 @@ def main() -> None:
     out_json = docs / f"COLUMN_MAP_V10_{slug}.json"
     out_json.write_text(json.dumps({
         "panel": panel_label,
-        "source_export": str(csv_path),
+        # Basename only: the parent directory is the subject/recording
+        # identifier, and this file is published. The timestamped filename
+        # still says which export the map came from.
+        "source_export": csv_path.name,
         "source_template": mmx_path.name,
         "n_columns": len(rows),
         "n_distinct_variable_names": len({r["variable_name"] for r in rows if r["variable_name"]}),

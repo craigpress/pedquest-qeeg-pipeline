@@ -50,7 +50,7 @@ ROW_FLAGS: dict[str, tuple[str, str]] = {
 # Families where Persyst writes 0 for a whole FFT epoch when artifact is high.
 SUPPRESSED_NOTE = ("suppressed-zeros",
                    "0 does not mean zero - Artifact Reduction rejected this channel for this epoch. "
-                   "Suppression is PER-CHANNEL (2.2%-51.9% by derivation in 4290-4), not global. "
+                   "Suppression is PER-CHANNEL (2.2%-51.9% by derivation on the recording it was measured on), not global. "
                    "Treat as MISSING, not zero.")
 
 CSS = """
@@ -256,7 +256,7 @@ def main() -> None:
   with the metadata attached to it. Flagged rows are where the generated metadata disagrees with a
   vendor statement, or where identity is still positional &mdash; verify these before this becomes
   the extraction contract.</p>
-  <p class="prov">{d["source_export"]}<br>template: {d["source_template"]}</p>
+  <p class="prov">generated from export {d["source_export"]}<br>template: {d["source_template"]}</p>
 </header>
 
 <div class="stats">
@@ -270,7 +270,7 @@ def main() -> None:
 <div class="callout">
   <h3>Zeros are Artifact-Reduction rejections, and they are per-channel</h3>
   <p>Artifact Reduction writes <span class="mono">0</span> rather than a blank when it cannot clean
-  a channel for an epoch. Proven by toggling AR on the same recording (4290-4): with AR
+  a channel for an epoch. Proven by toggling AR on one recording, same panel: with AR
   <b>off</b> every derivation is zero exactly <b>0.12%</b> of the time &mdash; identical across all
   25, because that is one real 37&nbsp;s recording gap. With AR <b>on</b>, zero rates range from
   <b>2.2%</b> (Right Anterior) to <b>51.9%</b> (T4&#8209;T6). Only <b>1.7%</b> of AR&#8209;on zeros

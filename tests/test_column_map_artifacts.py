@@ -51,3 +51,37 @@ def test_variable_names_are_valid_identifiers(path):
         bad = [r["variable_name"] for r in csv.DictReader(fh)
                if r["variable_name"] and not r["variable_name"].isidentifier()]
     assert not bad, f"{path.name} has non-identifier variable_name(s): {bad[:5]}"
+
+
+# ---------------------------------------------------------------------------
+# The maps are published artifacts — to a second repository, and potentially
+# onward to collaborators. They are generated from a real patient export, so
+# the generator must not carry the source path into them: the parent directory
+# of an export is the subject/recording identifier.
+# ---------------------------------------------------------------------------
+
+_ID_PATTERNS = (
+    r"\b4290[-_]\d+",      # study subject IDs in this cohort
+    r"cardiac_arrest",         # the share the exports live on
+    # A drive-letter path into somewhere real data lives. Deliberately not
+    # a bare `X:/` — that also matches the `s:/` inside `https://`.
+    r"[A-Za-z]:[\\/](?:temp|Temp|Users|data)[\\/]",
+    r"\\\\[A-Za-z0-9_.-]+\\",   # UNC share
+    r"PatientID",
+    r"BirthDate",
+)
+
+
+@pytest.mark.parametrize("path", sorted(_DOCS.glob("COLUMN_MAP_V10_*")),
+                         ids=lambda p: p.name)
+def test_no_subject_identifiers_or_paths(path):
+    """Provenance records which export, never whose."""
+    import re
+    text = path.read_text(encoding="utf-8", errors="replace")
+    hits = {p: re.findall(p, text)[:3] for p in _ID_PATTERNS
+            if re.search(p, text)}
+    assert not hits, (
+        f"{path.name} carries subject-identifying content: {hits}. "
+        f"gen_column_map_v10.py records only the export's basename — check it "
+        f"has not regained the full path."
+    )
