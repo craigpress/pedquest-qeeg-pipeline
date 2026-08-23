@@ -1,0 +1,28 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+build/
+dist/
+
+# Runtime and cache
+output/
+tmp/
+.qeeg_cache/
+.pytest_cache/
+
+# Patient-derived data must never be committed. The synthetic stress cohort is
+# generated locally by tests/generate_stress_data.py; the two alignment
+# fixtures beside it are small, synthetic and intentionally tracked.
+.uploads/
+.exports/
+test_data/stress_test/
+
+# Frontend build output — shadows the API routes if present during dev
+frontend/dist/
+frontend/node_modules/
+
+# Editors
+.vscode/
+.idea/
+*.swp

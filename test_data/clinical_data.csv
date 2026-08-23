@@ -1,0 +1,6 @@
+patient_id,age_at_arrest_days,sex,arrest_etiology,rosc_time,rosc_date,primary_outcome_pcpc,secondary_outcome_vabs,site
+2046,2920,M,cardiac,08:30:00,2024-03-15,2,,CHOP
+3640,4380,F,drowning,05:15:00,2024-06-22,4,,BCH
+3848,1825,M,cardiac,19:00:00,2024-08-10,1,,CCHMC
+4458,365,F,asphyxia,01:20:00,2024-11-03,5,,CHOP
+4682,5475,M,cardiac,07:05:00,2025-01-18,3,,LURIE

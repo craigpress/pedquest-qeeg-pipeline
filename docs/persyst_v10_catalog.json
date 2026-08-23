@@ -1,0 +1,5067 @@
+{
+  "mmx_version": "15",
+  "source": "PedQuEST_Pennsieve_V10_research.mmx",
+  "description": "PedQuEST Pennsieve V10 research MMX - instrument catalog (generated)",
+  "n_instruments": 370,
+  "n_panels": 22,
+  "families": {
+    "adr": 42,
+    "aeeg": 5,
+    "alpha_variability": 27,
+    "artifact_intensity": 1,
+    "asymmetry": 13,
+    "asymmetry_spectrogram": 8,
+    "coherence_spectrogram": 10,
+    "display": 1,
+    "electrode_quality": 1,
+    "fft_power": 82,
+    "fft_spectrogram": 25,
+    "heart_rate": 2,
+    "other": 2,
+    "peak_envelope": 9,
+    "relative_power": 36,
+    "rhythmicity_spectrogram": 50,
+    "seizure_burden": 2,
+    "seizure_detection": 2,
+    "seizure_probability": 2,
+    "sleep": 7,
+    "spectral_edge": 12,
+    "spike_density": 16,
+    "status_epilepticus": 6,
+    "suppression_ratio": 9
+  },
+  "instruments": [
+    {
+      "name": "= 0 <0> [SleepStages]",
+      "family": "sleep",
+      "channels": "[SleepStages]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "= 1 <0> [SleepStages]",
+      "family": "sleep",
+      "channels": "[SleepStages]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "= 2 <0> [SleepStages]",
+      "family": "sleep",
+      "channels": "[SleepStages]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "= 3 <0> [SleepStages]",
+      "family": "sleep",
+      "channels": "[SleepStages]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "= 4 <0> [SleepStages]",
+      "family": "sleep",
+      "channels": "[SleepStages]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "= 5 <0> [SleepStages]",
+      "family": "sleep",
+      "channels": "[SleepStages]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": ">= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": ">= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": ">= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": ">= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": ">= 3 <0> [EventDensity Spike F3 OR Spike Fp1 OR Spike FP1 OR Spike C3 OR Spike P3 OR Spike O1 OR Spike F7 OR Spike T7 OR Spike P7 <Detector,Count_epoch>]",
+      "family": "spike_density",
+      "channels": "[EventDensity Spike F3 OR Spike Fp1 OR Spike FP1 OR Spike C3 OR Spike P3 OR Spike O1 OR Spike F7 OR Spike T3 OR Spike T5 <Detector,Count_epoch>]",
+      "predicted_slug": null,
+      "panels": [
+        "SpikeDetails",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": ">= 3 <0> [EventDensity Spike F4 OR Spike Fp2 OR Spike FP2 OR Spike C4 OR Spike P4 OR Spike O2 OR Spike F8 OR Spike T8 OR Spike P8 <Detector,Count_epoch>]",
+      "family": "spike_density",
+      "channels": "[EventDensity Spike F4 OR Spike Fp2 OR Spike FP2 OR Spike C4 OR Spike P4 OR Spike O2 OR Spike F8 OR Spike T4 OR Spike T6 <Detector,Count_epoch>]",
+      "predicted_slug": null,
+      "panels": [
+        "SpikeDetails",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": ">= 3 <0> [EventDensity SpikeGen <Detector,Count_epoch>01]",
+      "family": "spike_density",
+      "channels": "[EventDensity SpikeGen <Detector,Count_epoch>01]",
+      "predicted_slug": null,
+      "panels": [
+        "SpikeDetails",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": ">= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": ">= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": ">= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": ">= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Artifact",
+      "family": "other",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "Artifact01"
+    },
+    {
+      "name": "ArtifactIntensity",
+      "family": "artifact_intensity",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "SignalQuality",
+        "Comprehensive",
+        "aEEG",
+        "aEEG Sleep-Wake",
+        "Peak Envelope",
+        "Power by Frequency Band",
+        "SpikeDetails",
+        "Heart Rate",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Asymmetry, Absolute Index (EASI) 0-20 Asym Hemi",
+      "family": "asymmetry",
+      "channels": "Asym Hemi",
+      "predicted_slug": null,
+      "panels": [
+        "Alpha-Delta Ratios (Quadrant)",
+        "Relative Alpha Variability (Quadrant)",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Index (REASI) 0-20 Asym Hemi",
+      "family": "asymmetry",
+      "channels": "Asym Hemi",
+      "predicted_slug": null,
+      "panels": [
+        "Alpha-Delta Ratios (Quadrant)",
+        "Relative Alpha Variability (Quadrant)",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Index (REASI) 0-5 Asym Anterior",
+      "family": "asymmetry",
+      "channels": "Asym Anterior",
+      "predicted_slug": null,
+      "panels": [
+        "Research"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 5.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Index (REASI) 0-5 Asym Hemi",
+      "family": "asymmetry",
+      "channels": "Asym Hemi",
+      "predicted_slug": null,
+      "panels": [
+        "Asymmetry",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 5.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Index (REASI) 0-5 Asym Parasagittal",
+      "family": "asymmetry",
+      "channels": "Asym Parasagittal",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 5.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Index (REASI) 0-5 Asym Posterior",
+      "family": "asymmetry",
+      "channels": "Asym Posterior",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 5.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Index (REASI) 0-5 Asym Temporal",
+      "family": "asymmetry",
+      "channels": "Asym Temporal",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 5.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Index (REASI) 4-8 Asym Hemi",
+      "family": "asymmetry",
+      "channels": "Asym Hemi",
+      "predicted_slug": null,
+      "panels": [
+        "Asymmetry",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Index (REASI) 6-14 Asym Anterior",
+      "family": "asymmetry",
+      "channels": "Asym Anterior",
+      "predicted_slug": null,
+      "panels": [
+        "Research"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Index (REASI) 6-14 Asym Hemi",
+      "family": "asymmetry",
+      "channels": "Asym Hemi",
+      "predicted_slug": null,
+      "panels": [
+        "Asymmetry",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Index (REASI) 6-14 Asym Parasagittal",
+      "family": "asymmetry",
+      "channels": "Asym Parasagittal",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Index (REASI) 6-14 Asym Posterior",
+      "family": "asymmetry",
+      "channels": "Asym Posterior",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Index (REASI) 6-14 Asym Temporal",
+      "family": "asymmetry",
+      "channels": "Asym Temporal",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Spectrogram 0-20 Asym Anterior",
+      "family": "asymmetry_spectrogram",
+      "channels": "Asym Anterior",
+      "predicted_slug": null,
+      "panels": [
+        "Asymmetry",
+        "Alpha-Delta Ratios (Quadrant)",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Spectrogram 0-20 Asym Hemi",
+      "family": "asymmetry_spectrogram",
+      "channels": "Asym Hemi",
+      "predicted_slug": null,
+      "panels": [
+        "Comprehensive",
+        "aEEG",
+        "aEEG Sleep-Wake",
+        "Peak Envelope",
+        "Power by Frequency Band",
+        "Heart Rate",
+        "Relative Alpha Variability (Quadrant)",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Spectrogram 0-20 Asym Parasagittal",
+      "family": "asymmetry_spectrogram",
+      "channels": "Asym Parasagittal",
+      "predicted_slug": null,
+      "panels": [
+        "Asymmetry",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Spectrogram 0-20 Asym Posterior",
+      "family": "asymmetry_spectrogram",
+      "channels": "Asym Posterior",
+      "predicted_slug": null,
+      "panels": [
+        "Asymmetry",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Spectrogram 0-20 Asym Temporal",
+      "family": "asymmetry_spectrogram",
+      "channels": "Asym Temporal",
+      "predicted_slug": null,
+      "panels": [
+        "Asymmetry",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Spectrogram 0-20 F3C3P3",
+      "family": "asymmetry_spectrogram",
+      "channels": "F3C3P3",
+      "predicted_slug": null,
+      "panels": [
+        "Relative Alpha Variability (RAV)",
+        "Alpha Delta Ratios (ADR)",
+        "Research",
+        "Research-Spectrograms",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Spectrogram 0-20 F7T7P7",
+      "family": "asymmetry_spectrogram",
+      "channels": "F7T7P7",
+      "predicted_slug": null,
+      "panels": [
+        "Relative Alpha Variability (RAV)",
+        "Alpha Delta Ratios (ADR)",
+        "Research",
+        "Research-Spectrograms",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Asymmetry, Relative Spectrogram 0-20 P3P7O1",
+      "family": "asymmetry_spectrogram",
+      "channels": "P3P7O1",
+      "predicted_slug": null,
+      "panels": [
+        "Relative Alpha Variability (RAV)",
+        "Alpha Delta Ratios (ADR)",
+        "Research",
+        "Research-Spectrograms",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "BSR All 10-20_avg",
+      "family": "suppression_ratio",
+      "channels": "All 10-20",
+      "predicted_slug": "suppression_all",
+      "panels": [
+        "Suppression Ratio",
+        "SEF and SR",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "Amplitude01"
+    },
+    {
+      "name": "BSR Anterior_avg",
+      "family": "suppression_ratio",
+      "channels": "Anterior",
+      "predicted_slug": "suppression_anterior",
+      "panels": [
+        "Suppression Ratio",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "Amplitude01"
+    },
+    {
+      "name": "BSR Left Anterior_avg",
+      "family": "suppression_ratio",
+      "channels": "Left Anterior",
+      "predicted_slug": "suppression_left_anterior",
+      "panels": [
+        "Suppression Ratio",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "Amplitude01"
+    },
+    {
+      "name": "BSR Left Hemisphere_avg",
+      "family": "suppression_ratio",
+      "channels": "Left Hemisphere",
+      "predicted_slug": "suppression_left",
+      "panels": [
+        "Comprehensive",
+        "Suppression Ratio",
+        "SEF and SR",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "Amplitude01"
+    },
+    {
+      "name": "BSR Left Posterior_avg",
+      "family": "suppression_ratio",
+      "channels": "Left Posterior",
+      "predicted_slug": "suppression_left_posterior",
+      "panels": [
+        "Suppression Ratio",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "Amplitude01"
+    },
+    {
+      "name": "BSR Posterior_avg",
+      "family": "suppression_ratio",
+      "channels": "Posterior",
+      "predicted_slug": "suppression_posterior",
+      "panels": [
+        "Suppression Ratio",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "Amplitude01"
+    },
+    {
+      "name": "BSR Right Anterior_avg",
+      "family": "suppression_ratio",
+      "channels": "Right Anterior",
+      "predicted_slug": "suppression_right_anterior",
+      "panels": [
+        "Suppression Ratio",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "Amplitude01"
+    },
+    {
+      "name": "BSR Right Hemisphere_avg",
+      "family": "suppression_ratio",
+      "channels": "Right Hemisphere",
+      "predicted_slug": "suppression_right",
+      "panels": [
+        "Comprehensive",
+        "Suppression Ratio",
+        "SEF and SR",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "Amplitude01"
+    },
+    {
+      "name": "BSR Right Posterior_avg",
+      "family": "suppression_ratio",
+      "channels": "Right Posterior",
+      "predicted_slug": "suppression_right_posterior",
+      "panels": [
+        "Suppression Ratio",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "Amplitude01"
+    },
+    {
+      "name": "Coherence_Avg 0-32 C3-P3*C4-P4",
+      "family": "coherence_spectrogram",
+      "channels": "C3-P3*C4-P4",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Coherence_Avg 0-32 F3-C3*F4-C4",
+      "family": "coherence_spectrogram",
+      "channels": "F3-C3*F4-C4",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Coherence_Avg 0-32 P3-O1*P4-O2",
+      "family": "coherence_spectrogram",
+      "channels": "P3-O1*P4-O2",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Coherence_Avg 0-32 P7-O1*P8-O2",
+      "family": "coherence_spectrogram",
+      "channels": "T5-O1*T6-O2",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Coherence_Avg 0-32 T7-P7*T8-P8",
+      "family": "coherence_spectrogram",
+      "channels": "T3-T5*T4-T6",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Coherence_Spectrogram 0-32 C3-P3*C4-P4",
+      "family": "coherence_spectrogram",
+      "channels": "C3-P3*C4-P4",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Coherence_Spectrogram 0-32 F3-C3*F4-C4",
+      "family": "coherence_spectrogram",
+      "channels": "F3-C3*F4-C4",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Coherence_Spectrogram 0-32 P3-O1*P4-O2",
+      "family": "coherence_spectrogram",
+      "channels": "P3-O1*P4-O2",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Coherence_Spectrogram 0-32 P7-O1*P8-O2",
+      "family": "coherence_spectrogram",
+      "channels": "T5-O1*T6-O2",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Coherence_Spectrogram 0-32 T7-P7*T8-P8",
+      "family": "coherence_spectrogram",
+      "channels": "T3-T5*T4-T6",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "ColorScaledBars",
+      "family": "display",
+      "channels": "[SleepStages]",
+      "predicted_slug": null,
+      "panels": [
+        "aEEG Sleep-Wake",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "ElectrodeSignalQuality",
+      "family": "electrode_quality",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "SignalQuality",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Electrographic Status Epilepticus",
+      "family": "status_epilepticus",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Electrographic Status Epilepticus01",
+      "family": "status_epilepticus",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Electrographic Status Epilepticus02",
+      "family": "status_epilepticus",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Electrographic Status Epilepticus03",
+      "family": "status_epilepticus",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Electrographic Status Epilepticus04",
+      "family": "status_epilepticus",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Electrographic Status Epilepticus05",
+      "family": "status_epilepticus",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "EventDensity Spike F3 OR Spike Fp1 OR Spike FP1 OR Spike C3 OR Spike P3 OR Spike O1 OR Spike F7 OR Spike T7 OR Spike P7 <Detector,Count_epoch>",
+      "family": "spike_density",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "SpikeDetails",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "EventDensity Spike F4 OR Spike Fp2 OR Spike FP2 OR Spike C4 OR Spike P4 OR Spike O2 OR Spike F8 OR Spike T8 OR Spike P8 <Detector,Count_epoch>",
+      "family": "spike_density",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "SpikeDetails",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "EventDensity Spike Fp1 OR Spike FP1 OR Spike F3 OR Spike C3 OR Spike P3 OR Spike O1 OR Spike F7 OR Spike T7 OR Spike P7 <Detector,Count_epoch>",
+      "family": "spike_density",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "aEEG",
+        "aEEG Sleep-Wake",
+        "Peak Envelope",
+        "SpikeDetails",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "EventDensity Spike Fp2 OR Spike FP2 OR Spike F4 OR Spike C4 OR Spike P4 OR Spike O2 OR Spike F8 OR Spike T8 OR Spike P8 <Detector,Count_epoch>",
+      "family": "spike_density",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "aEEG",
+        "aEEG Sleep-Wake",
+        "Peak Envelope",
+        "SpikeDetails",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "EventDensity Spike Fz OR Spike FZ OR Spike Cz OR Spike CZ OR Spike Pz OR Spike PZ <Detector,Count_epoch>",
+      "family": "spike_density",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "aEEG",
+        "aEEG Sleep-Wake",
+        "Peak Envelope",
+        "SpikeDetails",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "EventDensity SpikeBurst <Detector,Count_overlap>",
+      "family": "spike_density",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "aEEG",
+        "aEEG Sleep-Wake",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "EventDensity SpikeGen <Detector,Count_epoch>",
+      "family": "spike_density",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "SpikeDetails",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "EventDensity SpikeGen <Detector,Count_epoch>01",
+      "family": "spike_density",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "aEEG",
+        "aEEG Sleep-Wake",
+        "Peak Envelope",
+        "SpikeDetails",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "FFT_Edge 50 0-32 All 10-20_avg",
+      "family": "spectral_edge",
+      "channels": "All 10-20",
+      "predicted_slug": "sef_50_all",
+      "panels": [
+        "SEF and SR",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Edge 75 0-32 All 10-20_avg",
+      "family": "spectral_edge",
+      "channels": "All 10-20",
+      "predicted_slug": "sef_75_all",
+      "panels": [
+        "SEF and SR",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Edge 90 0-32 All 10-20_avg",
+      "family": "spectral_edge",
+      "channels": "All 10-20",
+      "predicted_slug": "sef_90_all",
+      "panels": [
+        "SEF and SR",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Edge 95 0-32 All 10-20_avg",
+      "family": "spectral_edge",
+      "channels": "All 10-20",
+      "predicted_slug": "sef_95_all",
+      "panels": [
+        "SEF and SR",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Edge 95 0-32 Anterior_avg",
+      "family": "spectral_edge",
+      "channels": "Anterior",
+      "predicted_slug": "sef_95_anterior",
+      "panels": [
+        "SEF and SR",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Edge 95 0-32 Left Anterior_avg",
+      "family": "spectral_edge",
+      "channels": "Left Anterior",
+      "predicted_slug": "sef_95_left_anterior",
+      "panels": [
+        "SEF and SR",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Edge 95 0-32 Left Hemisphere_avg",
+      "family": "spectral_edge",
+      "channels": "Left Hemisphere",
+      "predicted_slug": "sef_95_left_hemisphere",
+      "panels": [
+        "SEF and SR",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Edge 95 0-32 Left Posterior_avg",
+      "family": "spectral_edge",
+      "channels": "Left Posterior",
+      "predicted_slug": "sef_95_left_posterior",
+      "panels": [
+        "SEF and SR",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Edge 95 0-32 Posterior_avg",
+      "family": "spectral_edge",
+      "channels": "Posterior",
+      "predicted_slug": "sef_95_posterior",
+      "panels": [
+        "SEF and SR",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Edge 95 0-32 Right Anterior_avg",
+      "family": "spectral_edge",
+      "channels": "Right Anterior",
+      "predicted_slug": "sef_95_right_anterior",
+      "panels": [
+        "SEF and SR",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Edge 95 0-32 Right Hemisphere_avg",
+      "family": "spectral_edge",
+      "channels": "Right Hemisphere",
+      "predicted_slug": "sef_95_right_hemisphere",
+      "panels": [
+        "SEF and SR",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Edge 95 0-32 Right Posterior_avg",
+      "family": "spectral_edge",
+      "channels": "Right Posterior",
+      "predicted_slug": "sef_95_right_posterior",
+      "panels": [
+        "SEF and SR",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 32.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-20 All 10-20_avg",
+      "family": "fft_power",
+      "channels": "All 10-20",
+      "predicted_slug": "fft_power_all",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-20 Anterior_avg",
+      "family": "fft_power",
+      "channels": "Anterior",
+      "predicted_slug": "fft_power_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-20 Left Anterior_avg",
+      "family": "fft_power",
+      "channels": "Left Anterior",
+      "predicted_slug": "fft_power_left_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-20 Left Hemisphere_avg",
+      "family": "fft_power",
+      "channels": "Left Hemisphere",
+      "predicted_slug": "fft_power_left_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-20 Left Posterior_avg",
+      "family": "fft_power",
+      "channels": "Left Posterior",
+      "predicted_slug": "fft_power_left_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-20 Posterior_avg",
+      "family": "fft_power",
+      "channels": "Posterior",
+      "predicted_slug": "fft_power_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-20 Right Anterior_avg",
+      "family": "fft_power",
+      "channels": "Right Anterior",
+      "predicted_slug": "fft_power_right_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-20 Right Hemisphere_avg",
+      "family": "fft_power",
+      "channels": "Right Hemisphere",
+      "predicted_slug": "fft_power_right_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-20 Right Posterior_avg",
+      "family": "fft_power",
+      "channels": "Right Posterior",
+      "predicted_slug": "fft_power_right_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-4 All 10-20_avg",
+      "family": "fft_power",
+      "channels": "All 10-20",
+      "predicted_slug": "fft_delta_all",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-4 Anterior_avg",
+      "family": "fft_power",
+      "channels": "Anterior",
+      "predicted_slug": "fft_delta_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-4 Left Anterior_avg",
+      "family": "fft_power",
+      "channels": "Left Anterior",
+      "predicted_slug": "fft_delta_left_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-4 Left Hemisphere_avg",
+      "family": "fft_power",
+      "channels": "Left Hemisphere",
+      "predicted_slug": "fft_delta_left_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-4 Left Posterior_avg",
+      "family": "fft_power",
+      "channels": "Left Posterior",
+      "predicted_slug": "fft_delta_left_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-4 Posterior_avg",
+      "family": "fft_power",
+      "channels": "Posterior",
+      "predicted_slug": "fft_delta_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-4 Right Anterior_avg",
+      "family": "fft_power",
+      "channels": "Right Anterior",
+      "predicted_slug": "fft_delta_right_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-4 Right Hemisphere_avg",
+      "family": "fft_power",
+      "channels": "Right Hemisphere",
+      "predicted_slug": "fft_delta_right_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 1-4 Right Posterior_avg",
+      "family": "fft_power",
+      "channels": "Right Posterior",
+      "predicted_slug": "fft_delta_right_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-20 All 10-20_avg",
+      "family": "fft_power",
+      "channels": "All 10-20",
+      "predicted_slug": "fft_beta_all",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-20 Anterior_avg",
+      "family": "fft_power",
+      "channels": "Anterior",
+      "predicted_slug": "fft_beta_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-20 Left Anterior_avg",
+      "family": "fft_power",
+      "channels": "Left Anterior",
+      "predicted_slug": "fft_beta_left_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-20 Left Hemisphere_avg",
+      "family": "fft_power",
+      "channels": "Left Hemisphere",
+      "predicted_slug": "fft_beta_left_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-20 Left Posterior_avg",
+      "family": "fft_power",
+      "channels": "Left Posterior",
+      "predicted_slug": "fft_beta_left_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-20 Posterior_avg",
+      "family": "fft_power",
+      "channels": "Posterior",
+      "predicted_slug": "fft_beta_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-20 Right Anterior_avg",
+      "family": "fft_power",
+      "channels": "Right Anterior",
+      "predicted_slug": "fft_beta_right_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-20 Right Hemisphere_avg",
+      "family": "fft_power",
+      "channels": "Right Hemisphere",
+      "predicted_slug": "fft_beta_right_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-20 Right Posterior_avg",
+      "family": "fft_power",
+      "channels": "Right Posterior",
+      "predicted_slug": "fft_beta_right_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-30 All 10-20_avg",
+      "family": "fft_power",
+      "channels": "All 10-20",
+      "predicted_slug": "fft_beta_wide_all",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-30 Anterior_avg",
+      "family": "fft_power",
+      "channels": "Anterior",
+      "predicted_slug": "fft_beta_wide_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-30 Left Anterior_avg",
+      "family": "fft_power",
+      "channels": "Left Anterior",
+      "predicted_slug": "fft_beta_wide_left_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-30 Left Hemisphere_avg",
+      "family": "fft_power",
+      "channels": "Left Hemisphere",
+      "predicted_slug": "fft_beta_wide_left_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-30 Left Posterior_avg",
+      "family": "fft_power",
+      "channels": "Left Posterior",
+      "predicted_slug": "fft_beta_wide_left_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-30 Posterior_avg",
+      "family": "fft_power",
+      "channels": "Posterior",
+      "predicted_slug": "fft_beta_wide_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-30 Right Anterior_avg",
+      "family": "fft_power",
+      "channels": "Right Anterior",
+      "predicted_slug": "fft_beta_wide_right_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-30 Right Hemisphere_avg",
+      "family": "fft_power",
+      "channels": "Right Hemisphere",
+      "predicted_slug": "fft_beta_wide_right_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 13-30 Right Posterior_avg",
+      "family": "fft_power",
+      "channels": "Right Posterior",
+      "predicted_slug": "fft_beta_wide_right_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 4-8 All 10-20_avg",
+      "family": "fft_power",
+      "channels": "All 10-20",
+      "predicted_slug": "fft_theta_all",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 4-8 Anterior_avg",
+      "family": "fft_power",
+      "channels": "Anterior",
+      "predicted_slug": "fft_theta_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 4-8 Left Anterior_avg",
+      "family": "fft_power",
+      "channels": "Left Anterior",
+      "predicted_slug": "fft_theta_left_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 4-8 Left Hemisphere_avg",
+      "family": "fft_power",
+      "channels": "Left Hemisphere",
+      "predicted_slug": "fft_theta_left_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 4-8 Left Posterior_avg",
+      "family": "fft_power",
+      "channels": "Left Posterior",
+      "predicted_slug": "fft_theta_left_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 4-8 Posterior_avg",
+      "family": "fft_power",
+      "channels": "Posterior",
+      "predicted_slug": "fft_theta_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 4-8 Right Anterior_avg",
+      "family": "fft_power",
+      "channels": "Right Anterior",
+      "predicted_slug": "fft_theta_right_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 4-8 Right Hemisphere_avg",
+      "family": "fft_power",
+      "channels": "Right Hemisphere",
+      "predicted_slug": "fft_theta_right_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 4-8 Right Posterior_avg",
+      "family": "fft_power",
+      "channels": "Right Posterior",
+      "predicted_slug": "fft_theta_right_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 8-13 All 10-20_avg",
+      "family": "fft_power",
+      "channels": "All 10-20",
+      "predicted_slug": "fft_alpha_all",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 8-13 Anterior_avg",
+      "family": "fft_power",
+      "channels": "Anterior",
+      "predicted_slug": "fft_alpha_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 8-13 Left Anterior_avg",
+      "family": "fft_power",
+      "channels": "Left Anterior",
+      "predicted_slug": "fft_alpha_left_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 8-13 Left Hemisphere_avg",
+      "family": "fft_power",
+      "channels": "Left Hemisphere",
+      "predicted_slug": "fft_alpha_left_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 8-13 Left Posterior_avg",
+      "family": "fft_power",
+      "channels": "Left Posterior",
+      "predicted_slug": "fft_alpha_left_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 8-13 Posterior_avg",
+      "family": "fft_power",
+      "channels": "Posterior",
+      "predicted_slug": "fft_alpha_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 8-13 Right Anterior_avg",
+      "family": "fft_power",
+      "channels": "Right Anterior",
+      "predicted_slug": "fft_alpha_right_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 8-13 Right Hemisphere_avg",
+      "family": "fft_power",
+      "channels": "Right Hemisphere",
+      "predicted_slug": "fft_alpha_right_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Power 8-13 Right Posterior_avg",
+      "family": "fft_power",
+      "channels": "Right Posterior",
+      "predicted_slug": "fft_alpha_right_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 1-4//1-30 All 10-20_avg",
+      "family": "relative_power",
+      "channels": "All 10-20",
+      "predicted_slug": "rel_delta_all",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 1-4//1-30 Anterior_avg",
+      "family": "relative_power",
+      "channels": "Anterior",
+      "predicted_slug": "rel_delta_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 1-4//1-30 Left Anterior_avg",
+      "family": "relative_power",
+      "channels": "Left Anterior",
+      "predicted_slug": "rel_delta_left_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 1-4//1-30 Left Hemisphere_avg",
+      "family": "relative_power",
+      "channels": "Left Hemisphere",
+      "predicted_slug": "rel_delta_left_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 1-4//1-30 Left Posterior_avg",
+      "family": "relative_power",
+      "channels": "Left Posterior",
+      "predicted_slug": "rel_delta_left_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 1-4//1-30 Posterior_avg",
+      "family": "relative_power",
+      "channels": "Posterior",
+      "predicted_slug": "rel_delta_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 1-4//1-30 Right Anterior_avg",
+      "family": "relative_power",
+      "channels": "Right Anterior",
+      "predicted_slug": "rel_delta_right_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 1-4//1-30 Right Hemisphere_avg",
+      "family": "relative_power",
+      "channels": "Right Hemisphere",
+      "predicted_slug": "rel_delta_right_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 1-4//1-30 Right Posterior_avg",
+      "family": "relative_power",
+      "channels": "Right Posterior",
+      "predicted_slug": "rel_delta_right_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 4.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 13-30//1-30 All 10-20_avg",
+      "family": "relative_power",
+      "channels": "All 10-20",
+      "predicted_slug": "rel_beta_wide_all",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 13-30//1-30 Anterior_avg",
+      "family": "relative_power",
+      "channels": "Anterior",
+      "predicted_slug": "rel_beta_wide_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 13-30//1-30 Left Anterior_avg",
+      "family": "relative_power",
+      "channels": "Left Anterior",
+      "predicted_slug": "rel_beta_wide_left_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 13-30//1-30 Left Hemisphere_avg",
+      "family": "relative_power",
+      "channels": "Left Hemisphere",
+      "predicted_slug": "rel_beta_wide_left_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 13-30//1-30 Left Posterior_avg",
+      "family": "relative_power",
+      "channels": "Left Posterior",
+      "predicted_slug": "rel_beta_wide_left_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 13-30//1-30 Posterior_avg",
+      "family": "relative_power",
+      "channels": "Posterior",
+      "predicted_slug": "rel_beta_wide_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 13-30//1-30 Right Anterior_avg",
+      "family": "relative_power",
+      "channels": "Right Anterior",
+      "predicted_slug": "rel_beta_wide_right_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 13-30//1-30 Right Hemisphere_avg",
+      "family": "relative_power",
+      "channels": "Right Hemisphere",
+      "predicted_slug": "rel_beta_wide_right_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 13-30//1-30 Right Posterior_avg",
+      "family": "relative_power",
+      "channels": "Right Posterior",
+      "predicted_slug": "rel_beta_wide_right_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 13.0,
+      "freq_max": 30.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-30 All 10-20_avg",
+      "family": "relative_power",
+      "channels": "All 10-20",
+      "predicted_slug": "rel_theta_all",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-30 Anterior_avg",
+      "family": "relative_power",
+      "channels": "Anterior",
+      "predicted_slug": "rel_theta_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-30 Left Anterior_avg",
+      "family": "relative_power",
+      "channels": "Left Anterior",
+      "predicted_slug": "rel_theta_left_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-30 Left Hemisphere_avg",
+      "family": "relative_power",
+      "channels": "Left Hemisphere",
+      "predicted_slug": "rel_theta_left_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-30 Left Posterior_avg",
+      "family": "relative_power",
+      "channels": "Left Posterior",
+      "predicted_slug": "rel_theta_left_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-30 Posterior_avg",
+      "family": "relative_power",
+      "channels": "Posterior",
+      "predicted_slug": "rel_theta_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-30 Right Anterior_avg",
+      "family": "relative_power",
+      "channels": "Right Anterior",
+      "predicted_slug": "rel_theta_right_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-30 Right Hemisphere_avg",
+      "family": "relative_power",
+      "channels": "Right Hemisphere",
+      "predicted_slug": "rel_theta_right_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-30 Right Posterior_avg",
+      "family": "relative_power",
+      "channels": "Right Posterior",
+      "predicted_slug": "rel_theta_right_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-4 All 10-20_avg",
+      "family": "adr",
+      "channels": "All 10-20",
+      "predicted_slug": "tdr_all",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-4 Anterior_avg",
+      "family": "adr",
+      "channels": "Anterior",
+      "predicted_slug": "tdr_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-4 F3C3P3_avg",
+      "family": "adr",
+      "channels": "F3C3P3",
+      "predicted_slug": "tdr_f3c3p3",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-4 F4C4P4_avg",
+      "family": "adr",
+      "channels": "F4C4P4",
+      "predicted_slug": "tdr_f4c4p4",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-4 F7T7P7_avg",
+      "family": "adr",
+      "channels": "F7T7P7",
+      "predicted_slug": "tdr_f7t7p7",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-4 F8T8P8_avg",
+      "family": "adr",
+      "channels": "F8T8P8",
+      "predicted_slug": "tdr_f8t8p8",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-4 Left Anterior_avg",
+      "family": "adr",
+      "channels": "Left Anterior",
+      "predicted_slug": "tdr_left_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-4 Left Hemisphere_avg",
+      "family": "adr",
+      "channels": "Left Hemisphere",
+      "predicted_slug": "tdr_left_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-4 Left Posterior_avg",
+      "family": "adr",
+      "channels": "Left Posterior",
+      "predicted_slug": "tdr_left_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-4 P3P7O1_avg",
+      "family": "adr",
+      "channels": "P3P7O1",
+      "predicted_slug": "tdr_p3p7o1",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-4 P4P8O2_avg",
+      "family": "adr",
+      "channels": "P4P8O2",
+      "predicted_slug": "tdr_p4p8o2",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-4 Posterior_avg",
+      "family": "adr",
+      "channels": "Posterior",
+      "predicted_slug": "tdr_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-4 Right Anterior_avg",
+      "family": "adr",
+      "channels": "Right Anterior",
+      "predicted_slug": "tdr_right_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-4 Right Hemisphere_avg",
+      "family": "adr",
+      "channels": "Right Hemisphere",
+      "predicted_slug": "tdr_right_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 4-8//1-4 Right Posterior_avg",
+      "family": "adr",
+      "channels": "Right Posterior",
+      "predicted_slug": "tdr_right_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 4.0,
+      "freq_max": 8.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 6-14//1-20 All 10-20_avg",
+      "family": "alpha_variability",
+      "channels": "All 10-20",
+      "predicted_slug": "rav_all",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 6-14//1-20 Anterior_avg",
+      "family": "alpha_variability",
+      "channels": "Anterior",
+      "predicted_slug": "rav_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 6-14//1-20 F3C3P3_avg",
+      "family": "alpha_variability",
+      "channels": "F3C3P3",
+      "predicted_slug": "rav_f3c3p3",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 6-14//1-20 F4C4P4_avg",
+      "family": "alpha_variability",
+      "channels": "F4C4P4",
+      "predicted_slug": "rav_f4c4p4",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 6-14//1-20 F7T7P7_avg",
+      "family": "alpha_variability",
+      "channels": "F7T7P7",
+      "predicted_slug": "rav_f7t7p7",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 6-14//1-20 F8T8P8_avg",
+      "family": "alpha_variability",
+      "channels": "F8T8P8",
+      "predicted_slug": "rav_f8t8p8",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 6-14//1-20 Left Anterior_avg",
+      "family": "alpha_variability",
+      "channels": "Left Anterior",
+      "predicted_slug": "rav_left_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 6-14//1-20 Left Hemisphere_avg",
+      "family": "alpha_variability",
+      "channels": "Left Hemisphere",
+      "predicted_slug": "rav_left_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 6-14//1-20 Left Posterior_avg",
+      "family": "alpha_variability",
+      "channels": "Left Posterior",
+      "predicted_slug": "rav_left_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 6-14//1-20 P3P7O1_avg",
+      "family": "alpha_variability",
+      "channels": "P3P7O1",
+      "predicted_slug": "rav_p3p7o1",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 6-14//1-20 P4P8O2_avg",
+      "family": "alpha_variability",
+      "channels": "P4P8O2",
+      "predicted_slug": "rav_p4p8o2",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 6-14//1-20 Posterior_avg",
+      "family": "alpha_variability",
+      "channels": "Posterior",
+      "predicted_slug": "rav_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 6-14//1-20 Right Anterior_avg",
+      "family": "alpha_variability",
+      "channels": "Right Anterior",
+      "predicted_slug": "rav_right_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 6-14//1-20 Right Hemisphere_avg",
+      "family": "alpha_variability",
+      "channels": "Right Hemisphere",
+      "predicted_slug": "rav_right_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 6-14//1-20 Right Posterior_avg",
+      "family": "alpha_variability",
+      "channels": "Right Posterior",
+      "predicted_slug": "rav_right_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 6.0,
+      "freq_max": 14.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-30 All 10-20_avg",
+      "family": "relative_power",
+      "channels": "All 10-20",
+      "predicted_slug": "rel_alpha_all",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-30 Anterior_avg",
+      "family": "relative_power",
+      "channels": "Anterior",
+      "predicted_slug": "rel_alpha_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-30 Left Anterior_avg",
+      "family": "relative_power",
+      "channels": "Left Anterior",
+      "predicted_slug": "rel_alpha_left_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-30 Left Hemisphere_avg",
+      "family": "relative_power",
+      "channels": "Left Hemisphere",
+      "predicted_slug": "rel_alpha_left_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-30 Left Posterior_avg",
+      "family": "relative_power",
+      "channels": "Left Posterior",
+      "predicted_slug": "rel_alpha_left_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-30 Posterior_avg",
+      "family": "relative_power",
+      "channels": "Posterior",
+      "predicted_slug": "rel_alpha_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-30 Right Anterior_avg",
+      "family": "relative_power",
+      "channels": "Right Anterior",
+      "predicted_slug": "rel_alpha_right_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-30 Right Hemisphere_avg",
+      "family": "relative_power",
+      "channels": "Right Hemisphere",
+      "predicted_slug": "rel_alpha_right_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-30 Right Posterior_avg",
+      "family": "relative_power",
+      "channels": "Right Posterior",
+      "predicted_slug": "rel_alpha_right_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-4 All 10-20_avg",
+      "family": "adr",
+      "channels": "All 10-20",
+      "predicted_slug": "adr_all",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-4 Anterior_avg",
+      "family": "adr",
+      "channels": "Anterior",
+      "predicted_slug": "adr_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-4 F3C3P3_avg",
+      "family": "adr",
+      "channels": "F3C3P3",
+      "predicted_slug": "adr_f3c3p3",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-4 F4C4P4_avg",
+      "family": "adr",
+      "channels": "F4C4P4",
+      "predicted_slug": "adr_f4c4p4",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-4 F7T7P7_avg",
+      "family": "adr",
+      "channels": "F7T7P7",
+      "predicted_slug": "adr_f7t7p7",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-4 F8T8P8_avg",
+      "family": "adr",
+      "channels": "F8T8P8",
+      "predicted_slug": "adr_f8t8p8",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-4 Left Anterior_avg",
+      "family": "adr",
+      "channels": "Left Anterior",
+      "predicted_slug": "adr_left_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-4 Left Hemisphere_avg",
+      "family": "adr",
+      "channels": "Left Hemisphere",
+      "predicted_slug": "adr_left_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-4 Left Posterior_avg",
+      "family": "adr",
+      "channels": "Left Posterior",
+      "predicted_slug": "adr_left_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-4 P3P7O1_avg",
+      "family": "adr",
+      "channels": "P3P7O1",
+      "predicted_slug": "adr_p3p7o1",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-4 P4P8O2_avg",
+      "family": "adr",
+      "channels": "P4P8O2",
+      "predicted_slug": "adr_p4p8o2",
+      "panels": [
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-4 Posterior_avg",
+      "family": "adr",
+      "channels": "Posterior",
+      "predicted_slug": "adr_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-4 Right Anterior_avg",
+      "family": "adr",
+      "channels": "Right Anterior",
+      "predicted_slug": "adr_right_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-4 Right Hemisphere_avg",
+      "family": "adr",
+      "channels": "Right Hemisphere",
+      "predicted_slug": "adr_right_hemisphere",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_PowerRatio 8-13//1-4 Right Posterior_avg",
+      "family": "adr",
+      "channels": "Right Posterior",
+      "predicted_slug": "adr_right_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": 8.0,
+      "freq_max": 13.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 All 10-20_avg",
+      "family": "fft_spectrogram",
+      "channels": "All 10-20",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 C3-P3_avg",
+      "family": "fft_spectrogram",
+      "channels": "C3-P3",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 C4-P4_avg",
+      "family": "fft_spectrogram",
+      "channels": "C4-P4",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 CZ-PZ_avg",
+      "family": "fft_spectrogram",
+      "channels": "CZ-PZ",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 F3-C3_avg",
+      "family": "fft_spectrogram",
+      "channels": "F3-C3",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 F4-C4_avg",
+      "family": "fft_spectrogram",
+      "channels": "F4-C4",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 F7-T3_avg",
+      "family": "fft_spectrogram",
+      "channels": "F7-T3",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 F8-T4_avg",
+      "family": "fft_spectrogram",
+      "channels": "F8-T4",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 FP1-F3_avg",
+      "family": "fft_spectrogram",
+      "channels": "FP1-F3",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 FP1-F7_avg",
+      "family": "fft_spectrogram",
+      "channels": "FP1-F7",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 FP2-F4_avg",
+      "family": "fft_spectrogram",
+      "channels": "FP2-F4",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 FP2-F8_avg",
+      "family": "fft_spectrogram",
+      "channels": "FP2-F8",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 Fz-Cz_avg",
+      "family": "fft_spectrogram",
+      "channels": "Fz-Cz",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 Left Anterior_avg",
+      "family": "fft_spectrogram",
+      "channels": "Left Anterior",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 Left Hemisphere_avg",
+      "family": "fft_spectrogram",
+      "channels": "Left Hemisphere",
+      "predicted_slug": null,
+      "panels": [
+        "Comprehensive",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 Left Posterior_avg",
+      "family": "fft_spectrogram",
+      "channels": "Left Posterior",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 P3-O1_avg",
+      "family": "fft_spectrogram",
+      "channels": "P3-O1",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 P4-O2_avg",
+      "family": "fft_spectrogram",
+      "channels": "P4-O2",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 P7-O1_avg",
+      "family": "fft_spectrogram",
+      "channels": "T5-O1",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 P8-O2_avg",
+      "family": "fft_spectrogram",
+      "channels": "T6-O2",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 Right Anterior_avg",
+      "family": "fft_spectrogram",
+      "channels": "Right Anterior",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 Right Hemisphere_avg",
+      "family": "fft_spectrogram",
+      "channels": "Right Hemisphere",
+      "predicted_slug": null,
+      "panels": [
+        "Comprehensive",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 Right Posterior_avg",
+      "family": "fft_spectrogram",
+      "channels": "Right Posterior",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 T7-T5_avg",
+      "family": "fft_spectrogram",
+      "channels": "T3-T5",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "FFT_Spectrogram 0-20 T8-T6_avg",
+      "family": "fft_spectrogram",
+      "channels": "T4-T6",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 0.0,
+      "freq_max": 20.0,
+      "engine": "FFTEngine01"
+    },
+    {
+      "name": "Heart Rate",
+      "family": "heart_rate",
+      "channels": "X1",
+      "predicted_slug": null,
+      "panels": [
+        "Heart Rate",
+        "Research"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "Heart Rate Engine01"
+    },
+    {
+      "name": "Heart Rate01",
+      "family": "heart_rate",
+      "channels": "X1",
+      "predicted_slug": null,
+      "panels": [
+        "Heart Rate",
+        "Research"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "Heart Rate Engine"
+    },
+    {
+      "name": "PeakEnvelope 2-20 All 10-20_avg",
+      "family": "peak_envelope",
+      "channels": "All 10-20",
+      "predicted_slug": "peak_envelope",
+      "panels": [
+        "Peak Envelope",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "PeakEnvelope01"
+    },
+    {
+      "name": "PeakEnvelope 2-20 Anterior_avg",
+      "family": "peak_envelope",
+      "channels": "Anterior",
+      "predicted_slug": "peak_envelope_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "PeakEnvelope01"
+    },
+    {
+      "name": "PeakEnvelope 2-20 Left Anterior_avg",
+      "family": "peak_envelope",
+      "channels": "Left Anterior",
+      "predicted_slug": "peak_envelope_left_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "PeakEnvelope01"
+    },
+    {
+      "name": "PeakEnvelope 2-20 Left Hemisphere_avg",
+      "family": "peak_envelope",
+      "channels": "Left Hemisphere",
+      "predicted_slug": "peak_envelope_left_hemisphere",
+      "panels": [
+        "Peak Envelope",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "PeakEnvelope01"
+    },
+    {
+      "name": "PeakEnvelope 2-20 Left Posterior_avg",
+      "family": "peak_envelope",
+      "channels": "Left Posterior",
+      "predicted_slug": "peak_envelope_left_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "PeakEnvelope01"
+    },
+    {
+      "name": "PeakEnvelope 2-20 Posterior_avg",
+      "family": "peak_envelope",
+      "channels": "Posterior",
+      "predicted_slug": "peak_envelope_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "PeakEnvelope01"
+    },
+    {
+      "name": "PeakEnvelope 2-20 Right Anterior_avg",
+      "family": "peak_envelope",
+      "channels": "Right Anterior",
+      "predicted_slug": "peak_envelope_right_anterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "PeakEnvelope01"
+    },
+    {
+      "name": "PeakEnvelope 2-20 Right Hemisphere_avg",
+      "family": "peak_envelope",
+      "channels": "Right Hemisphere",
+      "predicted_slug": "peak_envelope_right_hemisphere",
+      "panels": [
+        "Peak Envelope",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "PeakEnvelope01"
+    },
+    {
+      "name": "PeakEnvelope 2-20 Right Posterior_avg",
+      "family": "peak_envelope",
+      "channels": "Right Posterior",
+      "predicted_slug": "peak_envelope_right_posterior",
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "PeakEnvelope01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 All 10-20_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "All 10-20",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 C3-P3_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "C3-P3",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 C4-P4_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "C4-P4",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 CZ-PZ_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "CZ-PZ",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 F3-C3_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "F3-C3",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 F4-C4_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "F4-C4",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 F7-T3_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "F7-T3",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 F8-T4_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "F8-T4",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 FP1-F3_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "FP1-F3",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 FP1-F7_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "FP1-F7",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 FP2-F4_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "FP2-F4",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 FP2-F8_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "FP2-F8",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 Fz-Cz_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "Fz-Cz",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 Left Anterior_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "Left Anterior",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 Left Hemisphere_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "Left Hemisphere",
+      "predicted_slug": null,
+      "panels": [
+        "Comprehensive",
+        "aEEG",
+        "aEEG Sleep-Wake",
+        "Suppression Ratio",
+        "Peak Envelope",
+        "RhythmicDeltaDetails",
+        "Heart Rate",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 Left Posterior_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "Left Posterior",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 P3-O1_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "P3-O1",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 P4-O2_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "P4-O2",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 P7-O1_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "T5-O1",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 P8-O2_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "T6-O2",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 Right Anterior_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "Right Anterior",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 Right Hemisphere_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "Right Hemisphere",
+      "predicted_slug": null,
+      "panels": [
+        "Comprehensive",
+        "aEEG",
+        "aEEG Sleep-Wake",
+        "Suppression Ratio",
+        "Peak Envelope",
+        "RhythmicDeltaDetails",
+        "Heart Rate",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 Right Posterior_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "Right Posterior",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 T7-T5_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "T3-T5",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Rhythmicity Spectrogram 3.00 T8-T6_avg",
+      "family": "rhythmicity_spectrogram",
+      "channels": "T4-T6",
+      "predicted_slug": null,
+      "panels": [
+        "Rhythmicity by Channel",
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": 1.0,
+      "freq_max": 25.0,
+      "engine": "RhythmicityEngine01"
+    },
+    {
+      "name": "Seizure Burden",
+      "family": "seizure_burden",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Seizure Burden01",
+      "family": "seizure_burden",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "SeizureEventsP14",
+      "family": "other",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "SeizureProbabilityP1401"
+    },
+    {
+      "name": "SeizureProbabilityP14 Detections",
+      "family": "seizure_detection",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "Comprehensive",
+        "aEEG",
+        "aEEG Sleep-Wake",
+        "Peak Envelope",
+        "Heart Rate",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "SeizureProbabilityP1401"
+    },
+    {
+      "name": "SeizureProbabilityP14 Notifications",
+      "family": "seizure_probability",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "SeizureProbabilityP1401"
+    },
+    {
+      "name": "SeizureProbabilityP14 Probability",
+      "family": "seizure_probability",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "Comprehensive",
+        "aEEG",
+        "aEEG Sleep-Wake",
+        "Peak Envelope",
+        "Heart Rate",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "SeizureProbabilityP1401"
+    },
+    {
+      "name": "SleepStages",
+      "family": "sleep",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "SeizureProbabilityP1401"
+    },
+    {
+      "name": "SpikeDensityV1",
+      "family": "spike_density",
+      "channels": "",
+      "predicted_slug": null,
+      "panels": [
+        "Comprehensive",
+        "SpikeDetails",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "SpikeDensityV101"
+    },
+    {
+      "name": "SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[Rhythmicity Spectrogram 3.00 Left Anterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[Rhythmicity Spectrogram 3.00 Left Posterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[Rhythmicity Spectrogram 3.00 Right Anterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[Rhythmicity Spectrogram 3.00 Right Posterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[Rhythmicity Spectrogram 3.00 Left Anterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[Rhythmicity Spectrogram 3.00 Left Posterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[Rhythmicity Spectrogram 3.00 Right Anterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[Rhythmicity Spectrogram 3.00 Right Posterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_Power 1-4 All 10-20_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 1-4 All 10-20_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Power by Frequency Band",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_Power 1-4 Left Hemisphere_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 1-4 Left Hemisphere_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Power by Frequency Band",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_Power 1-4 Right Hemisphere_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 1-4 Right Hemisphere_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Power by Frequency Band",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_Power 13-20 All 10-20_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 13-20 All 10-20_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Power by Frequency Band",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_Power 13-20 Left Hemisphere_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 13-20 Left Hemisphere_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Power by Frequency Band",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_Power 13-20 Right Hemisphere_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 13-20 Right Hemisphere_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Power by Frequency Band",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_Power 4-8 All 10-20_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 4-8 All 10-20_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Power by Frequency Band",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_Power 4-8 Left Hemisphere_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 4-8 Left Hemisphere_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Power by Frequency Band",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_Power 4-8 Right Hemisphere_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 4-8 Right Hemisphere_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Power by Frequency Band",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_Power 8-13 All 10-20_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 8-13 All 10-20_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Power by Frequency Band",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_Power 8-13 Left Hemisphere_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 8-13 Left Hemisphere_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Power by Frequency Band",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_Power 8-13 Right Hemisphere_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 8-13 Right Hemisphere_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Power by Frequency Band",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 6-14//1-20 F3C3P3_avg]",
+      "family": "alpha_variability",
+      "channels": "[FFT_PowerRatio 6-14//1-20 F3C3P3_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Relative Alpha Variability (RAV)",
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 6-14//1-20 F4C4P4_avg]",
+      "family": "alpha_variability",
+      "channels": "[FFT_PowerRatio 6-14//1-20 F4C4P4_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Relative Alpha Variability (RAV)",
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 6-14//1-20 F7T7P7_avg]",
+      "family": "alpha_variability",
+      "channels": "[FFT_PowerRatio 6-14//1-20 F7T7P7_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Relative Alpha Variability (RAV)",
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 6-14//1-20 F8T8P8_avg]",
+      "family": "alpha_variability",
+      "channels": "[FFT_PowerRatio 6-14//1-20 F8T8P8_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Relative Alpha Variability (RAV)",
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 6-14//1-20 Left Anterior_avg]",
+      "family": "alpha_variability",
+      "channels": "[FFT_PowerRatio 6-14//1-20 Left Anterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Relative Alpha Variability (Quadrant)",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 6-14//1-20 Left Hemisphere_avg]",
+      "family": "alpha_variability",
+      "channels": "[FFT_PowerRatio 6-14//1-20 Left Hemisphere_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Relative Alpha Variability (Quadrant)",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 6-14//1-20 Left Posterior_avg]",
+      "family": "alpha_variability",
+      "channels": "[FFT_PowerRatio 6-14//1-20 Left Posterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Relative Alpha Variability (Quadrant)",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 6-14//1-20 P3P7O1_avg]",
+      "family": "alpha_variability",
+      "channels": "[FFT_PowerRatio 6-14//1-20 P3P7O1_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Relative Alpha Variability (RAV)",
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 6-14//1-20 P4P8O2_avg]",
+      "family": "alpha_variability",
+      "channels": "[FFT_PowerRatio 6-14//1-20 P4P8O2_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Relative Alpha Variability (RAV)",
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 6-14//1-20 Right Anterior_avg]",
+      "family": "alpha_variability",
+      "channels": "[FFT_PowerRatio 6-14//1-20 Right Anterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Relative Alpha Variability (Quadrant)",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 6-14//1-20 Right Hemisphere_avg]",
+      "family": "alpha_variability",
+      "channels": "[FFT_PowerRatio 6-14//1-20 Right Hemisphere_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Relative Alpha Variability (Quadrant)",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 6-14//1-20 Right Posterior_avg]",
+      "family": "alpha_variability",
+      "channels": "[FFT_PowerRatio 6-14//1-20 Right Posterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Relative Alpha Variability (Quadrant)",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 8-13//1-4 F3C3P3_avg]",
+      "family": "adr",
+      "channels": "[FFT_PowerRatio 8-13//1-4 F3C3P3_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Alpha Delta Ratios (ADR)",
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 8-13//1-4 F4C4P4_avg]",
+      "family": "adr",
+      "channels": "[FFT_PowerRatio 8-13//1-4 F4C4P4_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Alpha Delta Ratios (ADR)",
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 8-13//1-4 F7T7P7_avg]",
+      "family": "adr",
+      "channels": "[FFT_PowerRatio 8-13//1-4 F7T7P7_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Alpha Delta Ratios (ADR)",
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 8-13//1-4 F8T8P8_avg]",
+      "family": "adr",
+      "channels": "[FFT_PowerRatio 8-13//1-4 F8T8P8_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Alpha Delta Ratios (ADR)",
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 8-13//1-4 Left Anterior_avg]",
+      "family": "adr",
+      "channels": "[FFT_PowerRatio 8-13//1-4 Left Anterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Alpha-Delta Ratios (Quadrant)",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 8-13//1-4 Left Hemisphere_avg]",
+      "family": "adr",
+      "channels": "[FFT_PowerRatio 8-13//1-4 Left Hemisphere_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Alpha-Delta Ratios (Quadrant)",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 8-13//1-4 Left Posterior_avg]",
+      "family": "adr",
+      "channels": "[FFT_PowerRatio 8-13//1-4 Left Posterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Alpha-Delta Ratios (Quadrant)",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 8-13//1-4 P3P7O1_avg]",
+      "family": "adr",
+      "channels": "[FFT_PowerRatio 8-13//1-4 P3P7O1_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Alpha Delta Ratios (ADR)",
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 8-13//1-4 P4P8O2_avg]",
+      "family": "adr",
+      "channels": "[FFT_PowerRatio 8-13//1-4 P4P8O2_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Alpha Delta Ratios (ADR)",
+        "Research",
+        "Research-LimitedElectrodes"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 8-13//1-4 Right Anterior_avg]",
+      "family": "adr",
+      "channels": "[FFT_PowerRatio 8-13//1-4 Right Anterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Alpha-Delta Ratios (Quadrant)",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 8-13//1-4 Right Hemisphere_avg]",
+      "family": "adr",
+      "channels": "[FFT_PowerRatio 8-13//1-4 Right Hemisphere_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Alpha-Delta Ratios (Quadrant)",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,120> [FFT_PowerRatio 8-13//1-4 Right Posterior_avg]",
+      "family": "adr",
+      "channels": "[FFT_PowerRatio 8-13//1-4 Right Posterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Alpha-Delta Ratios (Quadrant)",
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,64> [FFT_Power 1-4 Left Anterior_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 1-4 Left Anterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,64> [FFT_Power 1-4 Left Posterior_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 1-4 Left Posterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,64> [FFT_Power 1-4 Right Anterior_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 1-4 Right Anterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,64> [FFT_Power 1-4 Right Posterior_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 1-4 Right Posterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,64> [FFT_Power 13-20 Left Anterior_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 13-20 Left Anterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,64> [FFT_Power 13-20 Left Posterior_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 13-20 Left Posterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,64> [FFT_Power 13-20 Right Anterior_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 13-20 Right Anterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,64> [FFT_Power 13-20 Right Posterior_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 13-20 Right Posterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,64> [FFT_Power 4-8 Left Anterior_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 4-8 Left Anterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,64> [FFT_Power 4-8 Left Posterior_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 4-8 Left Posterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,64> [FFT_Power 4-8 Right Anterior_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 4-8 Right Anterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,64> [FFT_Power 4-8 Right Posterior_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 4-8 Right Posterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,64> [FFT_Power 8-13 Left Anterior_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 8-13 Left Anterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,64> [FFT_Power 8-13 Left Posterior_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 8-13 Left Posterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,64> [FFT_Power 8-13 Right Anterior_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 8-13 Right Anterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Avg <0,64> [FFT_Power 8-13 Right Posterior_avg]",
+      "family": "fft_power",
+      "channels": "[FFT_Power 8-13 Right Posterior_avg]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-TimeAverages"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "Time Max <0,120> [SeizureProbabilityP14 Detections]",
+      "family": "seizure_detection",
+      "channels": "[SeizureProbabilityP14 Detections]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Spectrograms"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]] [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]] [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]] [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]] [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "[>= 3 <0> [EventDensity Spike F3 OR Spike Fp1 OR Spike FP1 OR Spike C3 OR Spike P3 OR Spike O1 OR Spike F7 OR Spike T7 OR Spike P7 <Detector,Count_epoch>]] AND NOT[>= 3 <0> [EventDensity Spike F4 OR Spike Fp2 OR Spike FP2 OR Spike C4 OR Spike P4 OR Spike O2 OR Spike F8 OR Spike T8 OR Spike P8 <Detector,Count_epoch>]]",
+      "family": "spike_density",
+      "channels": "[>= 3 <0> [EventDensity Spike F3 OR Spike Fp1 OR Spike FP1 OR Spike C3 OR Spike P3 OR Spike O1 OR Spike F7 OR Spike T3 OR Spike T5 <Detector,Count_epoch>]] [>= 3 <0> [EventDensity Spike F4 OR Spike Fp2 OR Spike FP2 OR Spike C4 OR Spike P4 OR Spike O2 OR Spike F8 OR Spike T4 OR Spike T6 <Detector,Count_epoch>]]",
+      "predicted_slug": null,
+      "panels": [
+        "Comprehensive",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "[>= 3 <0> [EventDensity Spike F3 OR Spike Fp1 OR Spike FP1 OR Spike C3 OR Spike P3 OR Spike O1 OR Spike F7 OR Spike T7 OR Spike P7 <Detector,Count_epoch>]] AND [>= 3 <0> [EventDensity Spike F4 OR Spike Fp2 OR Spike FP2 OR Spike C4 OR Spike P4 OR Spike O2 OR Spike F8 OR Spike T8 OR Spike P8 <Detector,Count_epoch>]]",
+      "family": "spike_density",
+      "channels": "[>= 3 <0> [EventDensity Spike F3 OR Spike Fp1 OR Spike FP1 OR Spike C3 OR Spike P3 OR Spike O1 OR Spike F7 OR Spike T3 OR Spike T5 <Detector,Count_epoch>]] [>= 3 <0> [EventDensity Spike F4 OR Spike Fp2 OR Spike FP2 OR Spike C4 OR Spike P4 OR Spike O2 OR Spike F8 OR Spike T4 OR Spike T6 <Detector,Count_epoch>]]",
+      "predicted_slug": null,
+      "panels": [
+        "Comprehensive",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "[>= 3 <0> [EventDensity Spike F4 OR Spike Fp2 OR Spike FP2 OR Spike C4 OR Spike P4 OR Spike O2 OR Spike F8 OR Spike T8 OR Spike P8 <Detector,Count_epoch>]] AND NOT[>= 3 <0> [EventDensity Spike F3 OR Spike Fp1 OR Spike FP1 OR Spike C3 OR Spike P3 OR Spike O1 OR Spike F7 OR Spike T7 OR Spike P7 <Detector,Count_epoch>]]",
+      "family": "spike_density",
+      "channels": "[>= 3 <0> [EventDensity Spike F4 OR Spike Fp2 OR Spike FP2 OR Spike C4 OR Spike P4 OR Spike O2 OR Spike F8 OR Spike T4 OR Spike T6 <Detector,Count_epoch>]] [>= 3 <0> [EventDensity Spike F3 OR Spike Fp1 OR Spike FP1 OR Spike C3 OR Spike P3 OR Spike O1 OR Spike F7 OR Spike T3 OR Spike T5 <Detector,Count_epoch>]]",
+      "predicted_slug": null,
+      "panels": [
+        "Comprehensive",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "[>= 3 <0> [EventDensity SpikeGen <Detector,Count_epoch>01]] AND [>= 3 <0> [EventDensity SpikeGen <Detector,Count_epoch>01]]",
+      "family": "spike_density",
+      "channels": "[>= 3 <0> [EventDensity SpikeGen <Detector,Count_epoch>01]] [>= 3 <0> [EventDensity SpikeGen <Detector,Count_epoch>01]]",
+      "predicted_slug": null,
+      "panels": [
+        "Comprehensive",
+        "Research",
+        "Research-Spectrograms",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "[[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]]] OR [[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]]]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]]] [[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]]]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "[[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]]] OR [[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]]]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]]] [[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]]]",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "[[[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]]] OR [[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]]]] AND NOT[[[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]]] OR [[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]]]]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[[[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]]] OR [[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]]]] [[[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]]] OR [[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]]]]",
+      "predicted_slug": null,
+      "panels": [
+        "Comprehensive",
+        "RhythmicDeltaDetails",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "[[[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]]] OR [[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]]]] AND [[[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]]] OR [[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]]]]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[[[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]]] OR [[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]]]] [[[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]]] OR [[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]]]]",
+      "predicted_slug": null,
+      "panels": [
+        "Comprehensive",
+        "RhythmicDeltaDetails",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "[[[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]]] OR [[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]]]] AND NOT[[[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]]] OR [[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]]]]",
+      "family": "rhythmicity_spectrogram",
+      "channels": "[[[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Anterior_avg]]]] OR [[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Right Posterior_avg]]]]] [[[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Anterior_avg]]]] OR [[>= 1.1 <0> [SumValues_Abs_0-0 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]] AND [>= 5 <0> [SumValues_Abs_2-2 [Rhythmicity Spectrogram 3.00 Left Posterior_avg]]]]]",
+      "predicted_slug": null,
+      "panels": [
+        "Comprehensive",
+        "RhythmicDeltaDetails",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": null
+    },
+    {
+      "name": "aEEG All 10-20_avg",
+      "family": "aeeg",
+      "channels": "All 10-20",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "aEEG01"
+    },
+    {
+      "name": "aEEG Anterior_avg",
+      "family": "aeeg",
+      "channels": "Anterior",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "aEEG01"
+    },
+    {
+      "name": "aEEG Left Hemisphere_avg",
+      "family": "aeeg",
+      "channels": "Left Hemisphere",
+      "predicted_slug": null,
+      "panels": [
+        "Comprehensive",
+        "aEEG",
+        "aEEG Sleep-Wake",
+        "Asymmetry",
+        "Alpha-Delta Ratios (Quadrant)",
+        "Suppression Ratio",
+        "Relative Alpha Variability (Quadrant)",
+        "Relative Alpha Variability (RAV)",
+        "Alpha Delta Ratios (ADR)",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "aEEG01"
+    },
+    {
+      "name": "aEEG Posterior_avg",
+      "family": "aeeg",
+      "channels": "Posterior",
+      "predicted_slug": null,
+      "panels": [
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "aEEG01"
+    },
+    {
+      "name": "aEEG Right Hemisphere_avg",
+      "family": "aeeg",
+      "channels": "Right Hemisphere",
+      "predicted_slug": null,
+      "panels": [
+        "Comprehensive",
+        "aEEG",
+        "aEEG Sleep-Wake",
+        "Asymmetry",
+        "Alpha-Delta Ratios (Quadrant)",
+        "Suppression Ratio",
+        "Relative Alpha Variability (Quadrant)",
+        "Relative Alpha Variability (RAV)",
+        "Alpha Delta Ratios (ADR)",
+        "Research",
+        "Research-Trends"
+      ],
+      "freq_min": null,
+      "freq_max": null,
+      "engine": "aEEG01"
+    }
+  ]
+}
