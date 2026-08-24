@@ -6,7 +6,7 @@ the whole test suite, and `tests/fixtures/column_identity_v2.json` was read by n
 test at all -- so a full green run proved nothing about column identity.
 
 The fixture test is the important one: it rebuilds the schema from the real
-4290-1 headers and asserts every `common_name` still matches the frozen
+subject-1 headers and asserts every `common_name` still matches the frozen
 baseline. That is what catches a silent identifier regression, which is
 otherwise invisible until someone's analysis script stops joining.
 
@@ -38,7 +38,7 @@ from qeeg.ingestion.column_mapper import (  # noqa: E402
 from qeeg.ingestion.mmx_parser import parse_mmx  # noqa: E402
 
 FIXTURE = ROOT / "tests" / "fixtures" / f"column_identity_v{COLUMN_SCHEMA_VERSION}.json"
-PATIENT_DIR = Path(r"Y:\cardiac_arrest\4290-1_1684730")
+PATIENT_DIR = Path(r"<EXPORT-DIR>\subject-1_rec")
 REF_MMX = ROOT / "Ref Files" / "PedQuEST_Pennsieve_V10_research.mmx"
 
 _share = pytest.mark.skipif(
@@ -66,7 +66,7 @@ def test_common_names_match_frozen_fixture():
     crosswalk -- renaming a column silently is the failure mode this guards.
     """
     spec = importlib.util.spec_from_file_location(
-        "_audit", ROOT / "scripts" / "audit_4290_1_columns.py")
+        "_audit", ROOT / "scripts" / "audit_columns.py")
     audit = importlib.util.module_from_spec(spec)
     sys.modules["_audit"] = audit
     spec.loader.exec_module(audit)
@@ -101,7 +101,7 @@ def test_every_real_column_resolves_by_ordinal():
     Persyst ships under one display label.
     """
     spec = importlib.util.spec_from_file_location(
-        "_audit", ROOT / "scripts" / "audit_4290_1_columns.py")
+        "_audit", ROOT / "scripts" / "audit_columns.py")
     audit = importlib.util.module_from_spec(spec)
     sys.modules["_audit"] = audit
     spec.loader.exec_module(audit)
@@ -117,7 +117,7 @@ def test_every_real_column_resolves_by_ordinal():
 @_share
 def test_common_names_unique_per_export():
     spec = importlib.util.spec_from_file_location(
-        "_audit", ROOT / "scripts" / "audit_4290_1_columns.py")
+        "_audit", ROOT / "scripts" / "audit_columns.py")
     audit = importlib.util.module_from_spec(spec)
     sys.modules["_audit"] = audit
     spec.loader.exec_module(audit)

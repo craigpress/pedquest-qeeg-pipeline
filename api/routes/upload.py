@@ -109,7 +109,7 @@ async def register_local_files(req: LocalPathRequest):
         # (e.g. "20260611_1323_.csv"), so two different patients exported in the same
         # minute collide — they write the same {stem}.ptr and the later registration
         # overwrites the earlier, so one patient's file resolves to the other's data
-        # (observed: 4290-13 seg3 resolving to 4290-3's recording). Disambiguate with
+        # (observed: subject-13 seg3 resolving to subject-3's recording). Disambiguate with
         # a short hash of the absolute path so colliding filenames stay distinct.
         # Use .absolute(), NOT .resolve(): .resolve() rewrites a mapped network drive
         # (Y:\) to its UNC target (\\host\share\), and reading that UNC form can fail
@@ -368,8 +368,8 @@ async def upload_eeg_corrections(file: UploadFile = File(...)):
                       eeg_duration, date_of_csv_creation (optional)
     Example:
         new_name,age_in_days_at_time_of_eeg,eeg_start_time,eeg_duration,date_of_csv_creation
-        4290-1_1684730,6050,07:00:34,07:52:31,2025-09-26 10:07:43.964550
-        4290-1_1684730_2,6049,07:00:31,22:19:31,2025-09-26 10:08:44.345235
+        subject-1_rec,6050,07:00:34,07:52:31,2025-09-26 10:07:43.964550
+        subject-1_rec_2,6049,07:00:31,22:19:31,2025-09-26 10:08:44.345235
     """
     if not file.filename or not file.filename.lower().endswith(".csv"):
         raise HTTPException(400, "Only CSV files accepted")

@@ -129,14 +129,14 @@ def test_provenance_carries_clinical_metadata_and_corrections_rows():
     """Reviewers should see the actual ROSC anchor and the correction row(s)
     that produced the timing — not just their hash."""
     clinical = {
-        "patient_id": "4290-10",
+        "patient_id": "subject-10",
         "rosc_date": "2026-04-01",
         "rosc_time": "12:34:56",
         "age_at_arrest_days": 365,
     }
     corrections = {
-        "4290-10_b884347": {
-            "new_name": "4290-10_b884347",
+        "subject-10_rec": {
+            "new_name": "subject-10_rec",
             "age_in_days_at_time_of_eeg": 365,
             "eeg_start_time": "12:35:01",
             "eeg_duration": "11:32:00",
@@ -149,8 +149,8 @@ def test_provenance_carries_clinical_metadata_and_corrections_rows():
     )
     assert prov["clinical_metadata"]["rosc_time"] == "12:34:56"
     assert prov["clinical_metadata"]["age_at_arrest_days"] == 365
-    assert "4290-10_b884347" in prov["eeg_corrections"]
-    assert prov["eeg_corrections"]["4290-10_b884347"]["eeg_start_time"] == "12:35:01"
+    assert "subject-10_rec" in prov["eeg_corrections"]
+    assert prov["eeg_corrections"]["subject-10_rec"]["eeg_start_time"] == "12:35:01"
 
 
 def test_research_package_includes_manifest_and_epoch_parquet(tmp_path):

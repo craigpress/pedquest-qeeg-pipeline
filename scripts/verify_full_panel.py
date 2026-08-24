@@ -35,9 +35,11 @@ logging.disable(logging.WARNING)
 from qeeg.constants import SPECTROGRAM_FREQ_MAP  # noqa: E402
 from qeeg.ingestion.mmx_parser import parse_mmx  # noqa: E402
 from qeeg.pipeline import process_patient  # noqa: E402
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _paths import export_dir  # noqa: E402
 
 DEFAULT_MMX = ROOT / "Ref Files" / "PedQuEST_Pennsieve_V10_research.mmx"
-DEFAULT_SCAN = Path(r"C:\temp\cardiac_arrest\Test EEGs")
+DEFAULT_SCAN = None   # resolved from QEEG_EXPORT_DIR; see scripts/_paths.py
 
 # spec_type -> (schema family, expected bins)
 SPECTROGRAMS = {
@@ -196,12 +198,13 @@ def main() -> int:
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("csv", nargs="?", help="export CSV to verify")
     ap.add_argument("mmx", nargs="?", default=str(DEFAULT_MMX))
-    ap.add_argument("--scan", nargs="?", const=str(DEFAULT_SCAN), default=None,
-                    metavar="DIR", help="report panel widths under DIR and exit")
+    ap.add_argument("--scan", nargs="?", const="", default=None,
+                    metavar="DIR",
+                    help="report panel widths under DIR (default: $QEEG_EXPORT_DIR) and exit")
     args = ap.parse_args()
 
     if args.scan is not None:
-        return scan(Path(args.scan))
+        return scan(Path(args.scan) if args.scan else export_dir())
     if not args.csv:
         ap.error("give an export CSV, or --scan to look for one")
     return verify(Path(args.csv), Path(args.mmx))

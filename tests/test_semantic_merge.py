@@ -205,7 +205,7 @@ def test_overlapping_windows_sparse_fills_dense_gaps():
 # ---------------------------------------------------------------------------
 
 def test_same_icode_different_trends_across_segments_no_cross_contamination():
-    """Reproduces the 4290-1 root cause: two segments with the same
+    """Reproduces the subject-1 root cause: two segments with the same
     ``I288_1`` but DIFFERENT semantic meanings. The merged DataFrame must
     keep them as DISTINCT columns (one per semantic name), never mixing
     values across meanings.

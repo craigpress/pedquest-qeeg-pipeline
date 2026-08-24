@@ -83,7 +83,7 @@ def test_orig_step_uses_engine_cadence_when_clock_flat(synthetic_csv, tmp_path):
 def test_orig_step_uses_min_across_multiple_engines(synthetic_csv, tmp_path):
     """With multiple engines (FFT at 1s, Rhythmicity at 322s), orig_step must
     pick the SMALLEST cadence — rows are emitted at the fastest engine's rate.
-    Picking the first-found would give 4290-10's 322× time-axis inflation.
+    Picking the first-found would give subject-10's 322× time-axis inflation.
     """
     from api.services import pipeline_service as ps_mod
     from api.services.pipeline_service import EngineConfig, StudyConfig

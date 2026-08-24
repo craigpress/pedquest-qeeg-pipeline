@@ -1,4 +1,4 @@
-"""Freeze the column-identity ground truth from the real 4290-1 Persyst exports.
+"""Freeze the column-identity ground truth from the real subject-1 Persyst exports.
 
 Why this exists
 ---------------
@@ -44,7 +44,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import importlib.util
 
-_spec = importlib.util.spec_from_file_location("_audit", ROOT / "scripts" / "audit_4290_1_columns.py")
+_spec = importlib.util.spec_from_file_location("_audit", ROOT / "scripts" / "audit_columns.py")
 _audit = importlib.util.module_from_spec(_spec)
 sys.modules["_audit"] = _audit
 _spec.loader.exec_module(_audit)
@@ -53,13 +53,15 @@ from qeeg.ingestion.column_mapper import build_column_schema_with_mmx  # noqa: E
 from qeeg.ingestion.mmx_parser import parse_mmx  # noqa: E402
 
 from qeeg.__version__ import COLUMN_SCHEMA_VERSION  # noqa: E402
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _paths import recording_dir  # noqa: E402
 
 # One fixture per column-vocabulary version. Older ones stay frozen: they are
 # the historical record the crosswalk is generated against, so they must never
 # be rewritten in place.
 FIXTURE = ROOT / "tests" / "fixtures" / f"column_identity_v{COLUMN_SCHEMA_VERSION}.json"
 
-PATIENT_DIR = Path(r"Y:\cardiac_arrest\4290-1_1684730")
+PATIENT_DIR = recording_dir("subject-1_rec")
 FALLBACK_MMX = ROOT / "Ref Files" / "PedQuEST_Pennsieve_V10_research.mmx"
 
 # Trailing pseudo-columns Persyst appends after the panel's instruments. They have

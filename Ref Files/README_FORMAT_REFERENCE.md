@@ -26,7 +26,7 @@ computed in
 > four bands: 1-4 Hz, 4-9 Hz, 9-16 Hz and 16-25 Hz.
 
 The exported data settles it. Observed maxima of the position-1 (peak-frequency)
-sub-columns across the real 4290-1 Research export:
+sub-columns across the real subject-1 Research export:
 
 ```
 band 1   3.96 Hz      band 2   8.59 Hz      band 3  13.89 Hz      band 4  22.90 Hz

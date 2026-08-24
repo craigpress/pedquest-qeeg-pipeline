@@ -1,13 +1,13 @@
-"""Process and verify the full-research-panel export for patient 4290-1.
+"""Process and verify the full-research-panel export for patient subject-1.
 
 `20260708_1400_.csv` (2.44 GB, 4,103 I-code columns, 369 instruments) is the
 full-panel counterpart to the three limited-panel CSVs audited by
-`audit_4290_1_columns.py`. Same checks, one file:
+`audit_columns.py`. Same checks, one file:
 
   --parquet  full parse + Parquet conversion + CSV↔Parquet verification
   --stats    column assignment, value stats, spectrogram-family checks
 
-Outputs land in output/audit_4290_1_fullpanel/.
+Outputs land in output/audit_fullpanel/.
 """
 from __future__ import annotations
 
@@ -25,13 +25,15 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import numpy as np
 import pandas as pd
 
-from audit_4290_1_columns import read_header_block, _raw_data_lines
+from audit_columns import read_header_block, _raw_data_lines
 from qeeg.ingestion.column_mapper import build_column_schema
 from qeeg.ingestion.subcol_validator import validate_subcol_counts, classify_trend
 from qeeg.ingestion.identity import derive_patient_id
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _paths import recording_dir  # noqa: E402
 
-CSV_PATH = Path(r"Y:\cardiac_arrest\4290-1_1684730\20260708_1400_.csv")
-OUT = Path(__file__).resolve().parents[1] / "output" / "audit_4290_1_fullpanel"
+CSV_PATH = recording_dir("subject-1_rec") / "20260708_1400_.csv"
+OUT = Path(__file__).resolve().parents[1] / "output" / "audit_fullpanel"
 
 
 def convert_and_verify() -> None:
@@ -261,7 +263,7 @@ def build_stats() -> None:
     print(f"\nwrote {OUT/'summary.json'}, {OUT/'column_review_table.csv'}")
 
 
-LIMITED_OUT = Path(__file__).resolve().parents[1] / "output" / "audit_4290_1"
+LIMITED_OUT = Path(__file__).resolve().parents[1] / "output" / "audit_subject-1"
 
 
 def audit_seam() -> None:

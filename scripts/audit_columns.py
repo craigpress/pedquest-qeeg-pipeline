@@ -1,4 +1,4 @@
-"""Column-assignment audit for patient 4290-1 (three limited-research-panel CSVs).
+"""Column-assignment audit for patient subject-1 (three limited-research-panel CSVs).
 
 Stage 1 (--headers): header-only scan. Builds the column schema from the CSV
 code row + trend row, runs the sub-column contract validator, cross-checks
@@ -9,7 +9,7 @@ Stage 2 (--parquet): full parse + Parquet conversion, then verifies the Parquet
 against the CSV (column identity, row count, dtypes, and cell-level equality on
 a deterministic sample of rows/columns read straight from the CSV text).
 
-Outputs land in output/audit_4290_1/.
+Outputs land in output/audit_subject-1/.
 """
 from __future__ import annotations
 
@@ -34,15 +34,17 @@ from qeeg.ingestion.parser import (
 from qeeg.ingestion.column_mapper import build_column_schema, build_column_schema_with_mmx
 from qeeg.ingestion.subcol_validator import validate_subcol_counts, classify_trend
 from qeeg.ingestion.identity import derive_patient_id
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _paths import export_dir, recording_dir  # noqa: E402
 
-PATIENT_DIR = Path(r"Y:\cardiac_arrest\4290-1_1684730")
-SHARE_ROOT = Path(r"Y:\cardiac_arrest")
+PATIENT_DIR = recording_dir("subject-1_rec")
+SHARE_ROOT = export_dir()
 CSVS = [
     "20260707_1358_.csv",
     "20260707_1413_.csv",
     "20260707_1449_.csv",
 ]
-OUT = Path(__file__).resolve().parents[1] / "output" / "audit_4290_1"
+OUT = Path(__file__).resolve().parents[1] / "output" / "audit_subject-1"
 
 
 def read_header_block(path: Path) -> dict:

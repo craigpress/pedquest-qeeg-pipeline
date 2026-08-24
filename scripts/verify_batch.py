@@ -15,9 +15,11 @@ import subprocess
 import sys
 import time
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _paths import export_dir  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_SCAN = Path(r"C:\temp\cardiac_arrest\Test EEGs")
+DEFAULT_SCAN = None   # resolved from QEEG_EXPORT_DIR; see scripts/_paths.py
 
 
 def panel_width(csv_path: Path) -> int:
@@ -32,7 +34,7 @@ def panel_width(csv_path: Path) -> int:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("scan", nargs="?", default=str(DEFAULT_SCAN))
+    ap.add_argument("scan", nargs="?", default=None)
     ap.add_argument("--out", default=str(ROOT / "output" / "verify_batch"))
     ap.add_argument("--min-cols", type=int, default=400)
     ap.add_argument("--glob", default="2026*.csv")
@@ -40,7 +42,7 @@ def main() -> int:
 
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
-    root = Path(args.scan)
+    root = Path(args.scan) if args.scan else export_dir()
 
     targets = []
     for f in sorted(root.rglob(args.glob)):

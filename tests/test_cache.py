@@ -172,15 +172,15 @@ class TestClearCache:
         assert clear_cache("nonexistent", cache_dir) is False
 
     def test_exact_patient_id_does_not_clear_prefix_match(self, cache_dir: Path):
-        """Regression: clearing 4290-1 must not delete 4290-10."""
-        d1 = cache_dir / "aaa_4290-1"
-        d2 = cache_dir / "bbb_4290-10"
+        """Regression: clearing subject-1 must not delete subject-10."""
+        d1 = cache_dir / "aaa_subject-1"
+        d2 = cache_dir / "bbb_subject-10"
         d1.mkdir(parents=True)
         d2.mkdir(parents=True)
-        (d1 / "meta.json").write_text('{"patient_id": "4290-1"}', encoding="utf-8")
-        (d2 / "meta.json").write_text('{"patient_id": "4290-10"}', encoding="utf-8")
+        (d1 / "meta.json").write_text('{"patient_id": "subject-1"}', encoding="utf-8")
+        (d2 / "meta.json").write_text('{"patient_id": "subject-10"}', encoding="utf-8")
 
-        assert clear_cache("4290-1", cache_dir) is True
+        assert clear_cache("subject-1", cache_dir) is True
         assert not d1.exists()
         assert d2.exists()
 

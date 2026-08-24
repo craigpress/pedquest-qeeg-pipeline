@@ -918,7 +918,7 @@ def generate_common_name(entry: "ColumnEntry") -> str:  # type: ignore[name-defi
         # POSITIONAL ONLY — never name the electrode (Craig, 2026-08-21).
         # ESQ sub-columns map 1:1 to the recording's acquisition channels, whose
         # order and count come from that recording's own .lay [ChannelMap] and
-        # vary between recordings (4290-1 ends Fpz, Pz; 4290-4 ends Pz, Ref).
+        # vary between recordings (subject-1 ends Fpz, Pz; subject-4 ends Pz, Ref).
         # The previous hardcoded list was wrong in 21 of 22 positions and turned
         # a real disconnect pattern into a fabricated one. Emit the ordinal and
         # let electrode identity travel as per-recording metadata instead.
@@ -1358,7 +1358,7 @@ def resolve_export_panel(mmx: "MMXConfig", max_i_group: int):
 
     Persyst serialises the panel in display order and appends ``Comment`` and
     ``Time``, so ``len(panel.instruments) + 2 == max(i_group)``. Verified with
-    zero violations across all four real 4290-1 exports (Research-Trends 230+2
+    zero violations across all four real subject-1 exports (Research-Trends 230+2
     -> I232; Research 367+2 -> I369).
 
     Returns the unique matching :class:`PanelDef`, or ``None`` if no panel or

@@ -1,9 +1,9 @@
-"""Summarize the JSON output from diag_4290_1_coverage.py."""
+"""Summarize the JSON output from diag_coverage.py."""
 import json
 import sys
 
 import os
-path = os.environ.get("DIAG_JSON", r"C:\Users\craig\AppData\Local\Temp\diag_4290_1.json")
+path = os.environ.get("DIAG_JSON", "diag.json")
 with open(path) as f:
     d = json.load(f)
 
@@ -11,7 +11,7 @@ def pct(x):
     return "n/a" if x is None else f"{100*x:.1f}%"
 
 print("=" * 80)
-print("FAMILY SUMMARY: /api/patients/4290-1/epochs?families=<fam>")
+print("FAMILY SUMMARY: /api/patients/subject-1/epochs?families=<fam>")
 print("=" * 80)
 print(f"{'family':<22} {'cols':>5} {'early':>8} {'pre':>8} {'bnd':>8} {'late':>8} {'lost':>5} {'flip':>5}")
 for fam, r in d["families"].items():
@@ -30,7 +30,7 @@ for fam, r in d["families"].items():
 
 print()
 print("=" * 80)
-print("SPECTROGRAM SUMMARY: /api/patients/4290-1/spectrogram/<type>")
+print("SPECTROGRAM SUMMARY: /api/patients/subject-1/spectrogram/<type>")
 print("=" * 80)
 print(f"{'spec_type':<22} {'nfreq':>5} {'early NaN':>10} {'pre NaN':>10} {'bnd NaN':>10} {'late NaN':>10} | {'e pop':>6} {'l pop':>6}")
 for spec, r in d["spectrograms"].items():

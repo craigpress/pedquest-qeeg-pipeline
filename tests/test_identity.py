@@ -13,9 +13,9 @@ from qeeg.ingestion.identity import derive_patient_id
     ("01-001_UUID_2", "01-001"),
     ("01-001", "01-001"),
     # Persyst .dat stems: patientID_hash
-    ("4290-10_b884347", "4290-10"),
-    ("4290-1_b884347", "4290-1"),     # distinct patient from 4290-10
-    ("4290-10", "4290-10"),
+    ("subject-10_rec", "subject-10"),
+    ("subject-1_rec", "subject-1"),     # distinct patient from subject-10
+    ("subject-10", "subject-10"),
     # Synthetic
     ("SYNTH001_1", "SYNTH001"),
     # Degenerate
@@ -27,9 +27,15 @@ def test_derive_patient_id(stem, expected):
     assert derive_patient_id(stem) == expected
 
 
-def test_4290_1_and_4290_10_are_distinct():
-    """Regression: hyphenated suffix is identity, not a segment to merge away."""
-    assert derive_patient_id("4290-1_h") != derive_patient_id("4290-10_h")
+def test_subject_1_and_subject_10_are_distinct():
+    """Regression: hyphenated suffix is identity, not a segment to merge away.
+
+    The prefix collision is the point — `subject-1` is a prefix of
+    `subject-10`, so a rule that splits on the first separator merges two
+    unrelated patients. Any future renaming of these fixtures must keep one ID
+    a prefix of the other or this test stops testing anything.
+    """
+    assert derive_patient_id("subject-1_h") != derive_patient_id("subject-10_h")
 
 
 def test_pocca_not_collapsed_to_site():

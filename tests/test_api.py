@@ -121,8 +121,8 @@ class TestUploadLocal:
         b = tmp_path / "patB" / "20260611_1323_.csv"
         a.parent.mkdir(parents=True)
         b.parent.mkdir(parents=True)
-        a.write_text("File,Z:/A/4290-3_x.dat\nheader\n1,2,3\n", encoding="utf-8")
-        b.write_text("File,Z:/B/4290-13_y.dat\nheader\nx,y\n", encoding="utf-8")
+        a.write_text("File,Z:/A/subject-3_x.dat\nheader\n1,2,3\n", encoding="utf-8")
+        b.write_text("File,Z:/B/subject-13_y.dat\nheader\nx,y\n", encoding="utf-8")
 
         fid_a = client.post("/api/upload/local", json={"paths": [str(a)]}).json()[0]["file_id"]
         fid_b = client.post("/api/upload/local", json={"paths": [str(b)]}).json()[0]["file_id"]

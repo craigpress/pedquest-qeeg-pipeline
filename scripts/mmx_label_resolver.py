@@ -27,7 +27,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from audit_4290_1_columns import read_header_block
+from audit_columns import read_header_block
 
 DEFAULT_MMX = Path(__file__).resolve().parents[1] / "Ref Files" / "PedQuEST_Pennsieve_V10_research.mmx"
 

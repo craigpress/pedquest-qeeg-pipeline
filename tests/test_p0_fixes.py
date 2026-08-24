@@ -101,7 +101,7 @@ def test_seizure_burden_counts_all_seizure_bin():
 
 
 # --- P0-1: V8 Suppression Ratio is 0–100 percent, not a 0–1 fraction ---------
-# Resolved against the real 4290-1_1684730 V8 export (research-trends panel):
+# Resolved against the real subject-1_rec V8 export (research-trends panel):
 # Suppression Ratio column max = 30.97 > 1, which rules out a 0–1 fraction.
 def test_suppression_threshold_default_is_acns_continuity_boundary():
     # ACNS 2021: <10% suppression = continuous/nearly-continuous; 10-49% = discontinuous.

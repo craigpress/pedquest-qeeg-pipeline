@@ -6,7 +6,7 @@ measurements biases every mean, ratio and spectral summary downward, and because
 they cluster in the most artifacted stretches the bias is systematic rather than
 random.
 
-Proven by toggling AR on one recording (4290-4, full Research panel): with AR off
+Proven by toggling AR on one recording (subject-4, full Research panel): with AR off
 every region is zero exactly 0.12% of the time — uniformly, because that is one
 real 37-second recording gap. With AR on the rate ranges 0.10%–24.5% by region.
 Only 1.7% of AR-on zeros are also zero without AR, so 98.3% are AR rejections.

@@ -145,7 +145,7 @@ Anything the script cannot safely reconstruct is reported as `not checked` rathe
 | Seizure overlaps artifact | Raw and artifact-clean seizure summaries differ with explicit labels. |
 | Corrected multi-segment + MMX | Semantic merge uses MMX, not regex fallback. |
 | CSV stem differs from embedded `.dat` stem | Dat-stem correction affects cache key and reprocessing. |
-| `4290-1` and `4290-10` cache dirs | Clearing one patient does not remove the other. |
+| `subject-1` and `subject-10` cache dirs | Clearing one patient does not remove the other. |
 | Signed asymmetry spectrogram downsampling | Dominant negative values remain negative. |
 | Cohort spanning more than one export panel | `subcol_validator` passes for every patient; family-keyed slugs resolve identically across panels; columns absent from a narrower panel are flagged as panel-keyed MNAR, not silently null. |
 | Rhythmicity spectrogram bin axis | Bin 49 reports center frequency `9_00hz` (sqrt-scaled formula `f_k = (1 + (k-1)/24)²`), NOT `13.0hz` (legacy linear approximation). |

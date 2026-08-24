@@ -207,7 +207,7 @@ may resolve to different instruments per segment.
    schema aligned to the slugs.
 
 This replaced an earlier raw-I-code recoding path that silently produced 83.5% NaN tails
-on patient `4290-1`. Cache schema bumped to **v3** at the changeover.
+on patient `subject-1`. Cache schema bumped to **v3** at the changeover.
 
 ### 4.4 Cache architecture — `qeeg/storage/result_cache.py` + `api/services/pipeline_service.py`
 
@@ -584,7 +584,7 @@ python tests/generate_stress_data.py
 | **Watchfiles reload is unreliable on Windows** | Documented upstream uvicorn bug. Manual restart via `dev-server` skill is the workaround. |
 | **`frontend/dist/` shadows Vite in dev** | FastAPI catches all unknown routes via the static mount; if `dist/` exists in dev mode you'll see stale prod JS. |
 | **Multi-segment patients can have identical `ClockDateTime`** | At sub-1s `epoch_step`, adjacent rows can share timestamps. `_indexed` drops duplicates with a logged warning during semantic merge. |
-| **EEG corrections key on dat-stem, not patient ID** | `_dat_stem_from_csv` reads the `File:` row. Patient ID prefix-match would leak corrections across `4290-1` vs `4290-10`. |
+| **EEG corrections key on dat-stem, not patient ID** | `_dat_stem_from_csv` reads the `File:` row. Patient ID prefix-match would leak corrections across `subject-1` vs `subject-10`. |
 | **Recharts log-axis tuple-range Area silently drops fill** | Use stacked-Area on linear scale instead. `AeegEnvelopeGroup.tsx` is the canonical workaround. |
 | **Don't pin numpy<2.0 on Windows** | Installed locked DLLs cause OSError. Use minimum bounds only. |
 | **Spectrogram time-axis is server-side downsampled to 2000 points** | Frontend re-downsampling is allowed but server is authoritative; bumping caps requires both sides. |

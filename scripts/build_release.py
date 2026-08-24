@@ -20,6 +20,7 @@ never writes inside the source tree.
 from __future__ import annotations
 
 import argparse
+import re
 import hashlib
 import shutil
 import sys
@@ -153,6 +154,46 @@ def build(dest: Path, force: bool) -> int:
 
     (dest / ".gitignore").write_text(RELEASE_GITIGNORE, encoding="utf-8")
     print("  wrote: .gitignore (release policy, not the dev one)")
+
+    # Refuse to ship patient identifiers. This is the gate rather than a repo
+    # sweep because the sweep works off `git ls-files`, and HANDOFF.md -- which
+    # names recordings freely -- is gitignored in the development repo, so a
+    # tracked-file scan cannot see it. The published tree is what matters, so
+    # the published tree is what gets checked.
+    id_patterns = [
+        re.compile(r"\b4290[-_]\d+"),            # study subject IDs
+        re.compile(r"POCCA_429\d"),           # study-prefixed form
+        re.compile(r"cardiac_arrest"),           # the data share
+        # A path into the data share specifically. `Users` is deliberately
+        # absent: it matches every generic Windows dev path.
+        re.compile(r"[A-Za-z]:[\\\\/][^\\\\/]*[\\\\/]?cardiac_arrest", re.I),
+    ]
+    text_suffixes = {".py", ".md", ".json", ".csv", ".html", ".ts", ".tsx",
+                     ".txt", ".yml", ".yaml", ".toml", ".cfg"}
+    offenders: list[str] = []
+    for f in dest.rglob("*"):
+        if not f.is_file() or f.suffix.lower() not in text_suffixes:
+            continue
+        if f.name in ("test_column_map_artifacts.py", "build_release.py"):
+            continue          # these carry the patterns by definition
+        try:
+            body = f.read_text(encoding="utf-8")
+        except (UnicodeDecodeError, OSError):
+            continue
+        for pat in id_patterns:
+            m = pat.search(body)
+            if m:
+                offenders.append(f"{f.relative_to(dest).as_posix()}: {m.group(0)!r}")
+                break
+    if offenders:
+        print()
+        print("REFUSING TO SHIP - patient identifiers in the release tree:")
+        for o in offenders[:15]:
+            print(f"  {o}")
+        if len(offenders) > 15:
+            print(f"  ... and {len(offenders) - 15} more")
+        sys.exit(1)
+    print("  checked: no patient identifiers in the tree")
 
     # Fingerprint the shipped template so a swap is detectable.
     mmx = dest / MMX

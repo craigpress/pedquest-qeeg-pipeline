@@ -101,7 +101,7 @@ ARTIFACT_INTENSITY = FamilySchema(
 # classifiers consumed by the engine, not per-electrode measurements, and are
 # not useful directly. The previous schema here named them positionally from a
 # hardcoded BP-Longitudinal list and labelled them "binary 0/1" — both invented.
-# Verified on 4290-1: all 18 carry `raw_name = null`, so those electrode names
+# Verified on subject-1: all 18 carry `raw_name = null`, so those electrode names
 # were never read from the CSV. The family is discarded at ingestion
 # (`qeeg.constants.DISCARDED_FAMILIES`); see docs/ARTIFACT_EXCLUSION.md.
 

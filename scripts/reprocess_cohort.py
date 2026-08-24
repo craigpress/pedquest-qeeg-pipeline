@@ -32,9 +32,11 @@ from api.services.pipeline_service import (            # noqa: E402
     ClinicalMetadata, EEGCorrection, PipelineService,
 )
 from qeeg.config import PipelineConfig                 # noqa: E402
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _paths import export_dir  # noqa: E402
 
-COHORT = Path(r"C:\Temp\cardiac_arrest\Test EEGs")
-CLINICAL = Path(r"C:\Temp\cardiac_arrest\clinical.csv")
+COHORT = export_dir()
+CLINICAL = export_dir() / "clinical.csv"
 MMX = Path(r"C:\ProgramData\Persyst\PedQuEST_Pennsieve_V10_research.mmx")
 STUDY = "PedQuEST-V10"
 RENAME_CUTOFF = "20260821_12"

@@ -1,4 +1,4 @@
-"""Generate fake EEG date-correction CSVs for the Y:\\cardiac_arrest\\ cohort.
+"""Generate fake EEG date-correction CSVs for the <EXPORT-DIR>\\ cohort.
 
 For each patient folder, finds the .dat segments, then writes
 `eeg_date_correction.csv` with:
@@ -17,9 +17,12 @@ import random
 import re
 from datetime import datetime, timedelta
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _paths import export_dir  # noqa: E402
 
-ROOT = Path("Y:/cardiac_arrest")
-SEED = 4290
+ROOT = export_dir()
+SEED = 20260823   # arbitrary; was a number that read like the study ID
 random.seed(SEED)
 
 
@@ -70,7 +73,7 @@ def fmt_duration(td: timedelta) -> str:
 
 
 def patient_id_from_folder(folder: Path) -> str | None:
-    """Folder names look like '4290-1_1684730' — extract '4290-1'."""
+    """Folder names look like 'subject-1_rec' — extract 'subject-1'."""
     name = folder.name
     if "_" in name:
         return name.split("_", 1)[0]

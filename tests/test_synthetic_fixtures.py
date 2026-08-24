@@ -145,20 +145,20 @@ def test_seizure_overlapping_artifact_splits_raw_and_clean_metrics():
 def test_csv_stem_differs_from_dat_stem_and_corrections_key_on_dat_stem(tmp_path: Path):
     """Persyst exports often have a CSV filename like 20260422_2006__.csv
     while the embedded 'File,' row names the underlying dat file
-    (4290-10_b884347.dat). Corrections must be keyed by the dat stem."""
+    (subject-10_rec.dat). Corrections must be keyed by the dat stem."""
     from api.services.pipeline_service import PipelineService
 
     csv_path = tmp_path / "20260422_2006__.csv"
     csv_path.write_text(
         "Patient,Anon\n"
-        "File,C:\\\\studies\\\\4290-10_b884347.dat\n"
+        "File,C:\\\\studies\\\\subject-10_rec.dat\n"
         "ClockDateTime,I1_1\n"
         "44000.0,0.0\n",
         encoding="utf-8",
     )
 
     dat_stem = PipelineService._dat_stem_from_csv(csv_path)
-    assert dat_stem == "4290-10_b884347"
+    assert dat_stem == "subject-10_rec"
     # CSV stem is different — confirms the lookup key must not be csv_path.stem.
     assert csv_path.stem != dat_stem
 

@@ -9,7 +9,7 @@ reading colour names.
 Comment: the `.lay` [Comments] section holds the annotation text. This checks
 whether the CSV Comment column carries any of it.
 
-Writes output/audit_4290_1/sleep_and_comment.json.
+Writes output/audit_subject-1/sleep_and_comment.json.
 """
 from __future__ import annotations
 
@@ -23,12 +23,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import pandas as pd
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _paths import recording_dir  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 MMX = ROOT / "Ref Files" / "PedQuEST_Pennsieve_V10_research.mmx"
-OUT = ROOT / "output" / "audit_4290_1"
-FULL_OUT = ROOT / "output" / "audit_4290_1_fullpanel"
-LAY3 = Path(r"Y:\cardiac_arrest\4290-1_1684730\4290-1_1684730-3.lay")
+OUT = ROOT / "output" / "audit_subject-1"
+FULL_OUT = ROOT / "output" / "audit_fullpanel"
+LAY3 = recording_dir("subject-1_rec") / "subject-1_rec-3.lay"
 
 
 def palettes() -> dict:

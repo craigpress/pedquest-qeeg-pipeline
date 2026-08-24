@@ -12,10 +12,10 @@ Verified against the real cohort conventions:
     '2046_1_2'        -> '2046'      (PedQuEST continuation segment)
     '01-001_UUID_2'   -> '01-001'    (POCCA: siteID-patientID_UUID_eegNumber)
     '01-001'          -> '01-001'    (first EEG, no underscore)
-    '4290-10_b884347' -> '4290-10'   (Persyst .dat stem: patientID_hash)
-    '4290-10'         -> '4290-10'   (no hash)
+    'subject-10_rec' -> 'subject-10'   (Persyst .dat stem: patientID_hash)
+    'subject-10'         -> 'subject-10'   (no hash)
 
-Note '4290-1' and '4290-10' are DISTINCT patient IDs (see tests/test_cache.py) —
+Note 'subject-1' and 'subject-10' are DISTINCT patient IDs (see tests/test_cache.py) —
 the hyphenated suffix is part of the identity, not a segment to be merged away.
 """
 from __future__ import annotations

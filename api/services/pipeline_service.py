@@ -111,7 +111,7 @@ class ClinicalMetadata:
 @dataclass
 class EEGCorrection:
     """EEG date correction entry mapping de-identified filename to actual timing."""
-    new_name: str               # matches file stem (e.g. "4290-1_1684730")
+    new_name: str               # matches file stem (e.g. "subject-1_rec")
     age_in_days_at_time_of_eeg: int
     eeg_start_time: str         # HH:MM:SS clock time
     eeg_duration: str           # HH:MM:SS
@@ -1379,7 +1379,7 @@ class PipelineService:
         The dat stem is the canonical key for EEG corrections — the CSV filename alone
         (often an export timestamp like '20260422_2006__') cannot be used for lookup.
 
-        Normalizes segment suffix: '4290-10_b884347-2' → '4290-10_b884347_2'.
+        Normalizes segment suffix: 'subject-10_rec-2' → 'subject-10_rec_2'.
         """
         for encoding in ("utf-8-sig", "cp1252", "latin-1"):
             try:
@@ -1528,7 +1528,7 @@ class PipelineService:
             # Uniform-step fallback cadence for broken/non-monotonic raw timestamps.
             # Use the segment's OWN median positive inter-row delta — the true Persyst
             # trend cadence (~1s) — rather than a coarse MMX engine step, which would
-            # scale a 24h segment by hundreds of x (a 148s step inflated 4290-13 from
+            # scale a 24h segment by hundreds of x (a 148s step inflated subject-13 from
             # 24h to 3,553h). engine_step_days / 1s are only last-resort defaults.
             _pos_delta = original_serial.astype(float).diff()
             _pos_delta = _pos_delta[_pos_delta > 0]

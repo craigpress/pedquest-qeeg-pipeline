@@ -181,7 +181,7 @@ The single source of truth for the unit/scale of every Persyst-emitted column. S
 
 > **FFT power scale — how the unit is determined (resolved 2026-06-11).** Persyst's FFT power scale is **user-configurable** (Help, *Trend Types: Frequency*: "power parameter can be expressed as **µV², µV, dB, or sqrt(µV)**"), encoded per-instrument in the MMX as the **`PowerType`** attribute. In this template: `FFT_Power`, `FFT_PowerRatio`, `FFT_Edge`, `Rhythmicity`, `Asymmetry` use **`PowerType=1`**; `FFT_Spectrogram` uses **`PowerType=3`**; `Coherence` uses `PowerType=0`. The exported value's unit follows the configured scale — **not** a Persyst-universal default (the shipped `P15.mmx` example uses different scales).
 >
-> - **FFT band power (`PowerType=1`) = µV² (power).** Confirmed empirically against `4290-1_research-short.csv`: the delta-band power column equals the integral of the squared spectrogram, `Σ(spec_bin²)·Δf` (median 9.6 vs 13.1 µV², ratio 0.73, corr 0.983 — the offset is band-edge/smoothing), **not** its square root (which would be µV amplitude, ~2.6× too small). Matches `PersystTrendCSV_Format_Reference.md` §3.5.
+> - **FFT band power (`PowerType=1`) = µV² (power).** Confirmed empirically against `subject-1_research-short.csv`: the delta-band power column equals the integral of the squared spectrogram, `Σ(spec_bin²)·Δf` (median 9.6 vs 13.1 µV², ratio 0.73, corr 0.983 — the offset is band-edge/smoothing), **not** its square root (which would be µV amplitude, ~2.6× too small). Matches `PersystTrendCSV_Format_Reference.md` §3.5.
 > - **FFT spectrogram (`PowerType=3`) = µV/√Hz (amplitude spectral density).** Persyst's display label "sqrt(µV)/Hz" (Help) is loose notation for **√(µV²/Hz) = µV/√Hz**; `PersystTrendCSV_Format_Reference.md` §3.12 states it precisely and instructs "**square each value** to recover power spectral density in µV²/Hz". So `sqrt(µV)/Hz` (help) and `µV/√Hz` (our unit) are the **same quantity**.
 >
 > Caveat: these hold for the **PedQuEST MMX's `PowerType` settings**. A different MMX with a different `PowerType` would change the unit — always read `PowerType` from the engine, don't assume.
@@ -323,4 +323,4 @@ See `docs/persyst_v10_catalog.json` (machine-readable, with `predicted_slug` per
 
 ---
 
-*Generated from a parse of the shipped MMX. Slug mapping validated against the four real `4290-1` exports (zero slug collisions); panel and instrument counts are re-checked on every test run by `tests/test_persyst_doc_sync.py`.*
+*Generated from a parse of the shipped MMX. Slug mapping validated against the four real `subject-1` exports (zero slug collisions); panel and instrument counts are re-checked on every test run by `tests/test_persyst_doc_sync.py`.*

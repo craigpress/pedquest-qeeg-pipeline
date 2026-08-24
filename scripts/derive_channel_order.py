@@ -8,7 +8,7 @@ electrodes of that derivation. That makes the montage's graph topology recoverab
 from the correlation matrix alone — and the recovered graph can then be checked
 against the candidate orderings.
 
-Writes output/audit_4290_1/channel_order_derivation.json.
+Writes output/audit_subject-1/channel_order_derivation.json.
 """
 from __future__ import annotations
 
@@ -21,14 +21,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import numpy as np
 import pandas as pd
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _paths import export_dir  # noqa: E402
 
-OUT = Path(__file__).resolve().parents[1] / "output" / "audit_4290_1"
+OUT = Path(__file__).resolve().parents[1] / "output" / "audit_subject-1"
 
 AD = [f"I6_{i}" for i in range(1, 19)]      # Artifact Detector, 18 sub-cols
 EQ = [f"I30_{i}" for i in range(1, 23)]     # Electrode Signal Quality, 22 sub-cols
 
 # ---- candidate orderings -------------------------------------------------
-# E1: acquisition ChannelMap order, entries 1-22, from 4290-1_1684730.lay [ChannelMap]
+# E1: acquisition ChannelMap order, entries 1-22, from subject-1_rec.lay [ChannelMap]
 LAY_CHANNELMAP_22 = ["Fp1", "F7", "T3", "T5", "O1", "F3", "C3", "P3", "A1", "Fz",
                      "Cz", "Fp2", "F8", "T4", "T6", "O2", "F4", "C4", "P4", "A2",
                      "Fpz", "Pz"]
@@ -36,7 +38,7 @@ LAY_CHANNELMAP_22 = ["Fp1", "F7", "T3", "T5", "O1", "F3", "C3", "P3", "A1", "Fz"
 SCHEMA_ESQ_22 = ["Fp1", "Fp2", "F7", "F3", "Fz", "F4", "F8", "T3", "C3", "Cz", "C4",
                  "T4", "T5", "P3", "Pz", "P4", "T6", "O1", "O2", "A1", "A2", "EKG"]
 
-# D1: trending montage order, from 4290-1_1684730.lay [Record Montage 1] (EEG pairs only)
+# D1: trending montage order, from subject-1_rec.lay [Record Montage 1] (EEG pairs only)
 LAY_MONTAGE_18 = [("Fp1", "F3"), ("F3", "C3"), ("C3", "P3"), ("P3", "O1"),
                   ("Fp2", "F4"), ("F4", "C4"), ("C4", "P4"), ("P4", "O2"),
                   ("Fp1", "F7"), ("F7", "T3"), ("T3", "T5"), ("T5", "O1"),
@@ -127,9 +129,9 @@ def analyse(name: str, pq_path: str) -> dict:
     }
 
 
-SHARE = Path(r"Y:\cardiac_arrest")
+SHARE = export_dir()
 TEST_EEGS = SHARE / "Test EEGs"
-PATIENT_DIR = SHARE / "4290-1_1684730"
+PATIENT_DIR = SHARE / "subject-1_rec"
 NON_EEG_PREFIX = ("X", "DC", "OSAT", "PR", "Event")
 
 
@@ -153,12 +155,12 @@ def structural_evidence() -> dict:
     """Corroborating evidence that does not depend on the trend values."""
     import re as _re
     sys.path.insert(0, str(Path(__file__).resolve().parent))
-    from audit_4290_1_columns import read_header_block
+    from audit_columns import read_header_block
 
     ev: dict = {}
 
     # (a) Per-instrument raw outputs: byte size is proportional to channel count.
-    pdir = PATIENT_DIR / "4290-1_1684730.Persyst"
+    pdir = PATIENT_DIR / "subject-1_rec.Persyst"
     sizes = {f.name: f.stat().st_size for f in pdir.glob("mg2.*.raw")
              if f.name in ("mg2.Artifact.raw", "mg2.ElectrodeSignalQuality.raw",
                            "mg2.ArtifactIntensity.raw")}

@@ -436,7 +436,7 @@ def process_patient(
     # Median suppression ratio across usable epochs, averaged across hemispheres.
     # artifact_result.mask is True = keep (usable). P0-1: V8 Suppression Ratio is
     # already a 0–100 percent (PERSYST_V10_REFERENCE §3a / CSV ref §3.18; verified
-    # against the real 4290-1 V8 export, column max 30.97 > 1 rules out a 0–1
+    # against the real subject-1 V8 export, column max 30.97 > 1 rules out a 0–1
     # fraction). Report the median as-is; the prior ×100 overstated it 100×.
     if suppression_cols:
         sr_cols = [c for c in suppression_cols if c in df.columns]

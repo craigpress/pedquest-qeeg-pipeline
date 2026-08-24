@@ -1,4 +1,4 @@
-"""Diagnose schema-drift for patient 4290-1 across all epoch families + spectrograms.
+"""Diagnose schema-drift for patient subject-1 across all epoch families + spectrograms.
 
 Computes NaN fraction and column coverage in hour windows:
   early [0,30), pre_boundary [30,35), boundary [35,37), late [37,44).
@@ -13,7 +13,7 @@ from urllib.request import urlopen, Request
 from urllib.error import HTTPError, URLError
 
 BASE = "http://localhost:8000"
-PATIENT = "4290-1"
+PATIENT = "subject-1"
 
 WINDOWS = [
     ("early_0_30", 0.0, 30.0),

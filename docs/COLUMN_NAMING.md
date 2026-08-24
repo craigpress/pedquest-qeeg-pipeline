@@ -12,7 +12,7 @@ How a Persyst export column gets its identity and its name. The shipped
 template `Ref Files/PedQuEST_Pennsieve_V10_research.mmx` is the only source of
 truth; no earlier template is supported.
 
-Every claim here is checked against the four real 4290-1 exports and re-verified
+Every claim here is checked against the four real subject-1 exports and re-verified
 on each test run by `tests/test_column_resolution.py` (with the research share)
 and `tests/test_column_resolution_synthetic.py` (without it).
 
@@ -37,7 +37,7 @@ which panel an export came from, with no configuration.
 **Independent confirmation:** at every one of the 238 positions, the CSV trend
 text begins with that instrument's own MMX label (`GraphTitle`, or `Name` when
 empty). That check never consults the ordinal rule, so it is evidence *for* it,
-not a restatement. See `_project/audits/COLUMN_ASSIGNMENT_REVIEW_4290-1.md` §3.4.
+not a restatement. See `_project/audits/COLUMN_ASSIGNMENT_REVIEW.md` §3.4.
 
 **When the panel cannot be identified**, resolution degrades to name lookup and
 then regex. Several panels share an instrument count (four have 11, three have

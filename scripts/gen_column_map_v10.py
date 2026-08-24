@@ -87,7 +87,7 @@ TIER = {
 
 def _read_header_block(csv_path: Path) -> dict:
     spec = importlib.util.spec_from_file_location(
-        "_audit", ROOT / "scripts" / "audit_4290_1_columns.py")
+        "_audit", ROOT / "scripts" / "audit_columns.py")
     audit = importlib.util.module_from_spec(spec)
     sys.modules["_audit"] = audit
     spec.loader.exec_module(audit)

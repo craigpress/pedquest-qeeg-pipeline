@@ -5,7 +5,7 @@ Implements docs/_project/plans/NULL_ZERO_AND_METADATA_SPEC.md §2.
 The mask is built from ZERO_IMPOSSIBLE instruments only — measures that are
 physically positive-definite, so an exact 0 cannot be a measurement. Measures
 that are legitimately zero (suppression ratio, asymmetry) must never seed the
-mask or they null their own valid data; on 4290-4, Suppression Ratio All 10-20
+mask or they null their own valid data; on subject-4, Suppression Ratio All 10-20
 is 0 in 74% of *clean* rows.
 
 Granularity is the REGION (Left Anterior, Right Hemisphere, All 10-20, …) rather

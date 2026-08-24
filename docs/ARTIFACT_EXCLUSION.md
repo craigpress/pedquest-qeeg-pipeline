@@ -25,7 +25,7 @@ Persyst writes **`0`, not blank**, when Artifact Reduction cannot produce a valu
 missing data. Read as measurements they bias every mean, ratio and spectral summary downward, and
 because they cluster in the most artifacted stretches the bias is systematic, not random.
 
-Measured on 4290-4 (0–6 h bin, `fft_delta_all`):
+Measured on subject-4 (0–6 h bin, `fft_delta_all`):
 
 | | mean | `n_observed` |
 |---|---:|---:|
@@ -157,15 +157,15 @@ Cohort as reprocessed 2026-08-22 (V10 afternoon exports, AR on):
 
 | Patient | Epochs | Fully rejected | Partial | Cells → NaN | Artifact excl. |
 |---|---:|---:|---:|---:|---:|
-| 4290-1 | 135,164 | 134 | 102 | 855,788 | 0.11% |
-| 4290-3 | 92,909 | 87 | 597 | 360,804 | 0.10% |
-| 4290-4 | 65,769 | 43,421 | 6,117 | 13,596,321 | 66.12% |
-| 4290-8 | 48,623 | 83 | 47 | 347,168 | 0.19% |
-| 4290-10 | 41,272 | 98 | 131 | 239,885 | 0.26% |
-| 4290-12 | 38,740 | 84 | 164 | 247,209 | 0.22% |
-| 4290-13 | 99,598 | 819 | 7,486 | 1,516,225 | 2.04% |
+| subject-1 | 135,164 | 134 | 102 | 855,788 | 0.11% |
+| subject-3 | 92,909 | 87 | 597 | 360,804 | 0.10% |
+| subject-4 | 65,769 | 43,421 | 6,117 | 13,596,321 | 66.12% |
+| subject-8 | 48,623 | 83 | 47 | 347,168 | 0.19% |
+| subject-10 | 41,272 | 98 | 131 | 239,885 | 0.26% |
+| subject-12 | 38,740 | 84 | 164 | 247,209 | 0.22% |
+| subject-13 | 99,598 | 819 | 7,486 | 1,516,225 | 2.04% |
 
-**4290-4 is not a heavily artifacted recording** — its 66% comes from a 99.94%-zero segment being
+**subject-4 is not a heavily artifacted recording** — its 66% comes from a 99.94%-zero segment being
 merged with the one good segment. Its per-value data is sound; its epoch count and coverage are not.
 Excluding ≥95%-zero segments before the merge is an open item.
 
