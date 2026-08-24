@@ -6,8 +6,12 @@ enriches each row with units, engine cadence, MMX power scale, and an evidence
 tier per the release spec (§2.1).
 
 Outputs:
-  docs/COLUMN_MAP_V10.csv   — one row per exported column, machine-readable
-  docs/COLUMN_MAP_V10.json  — same content plus a per-family rollup
+  docs/COLUMN_MAP_V10_<panel>.csv   — one row per exported column
+  docs/COLUMN_MAP_V10_<panel>.json  — same content plus a per-family rollup
+
+Then render the browser views, which read those files:
+  python scripts/gen_column_map_md.py --all     # GitHub-readable
+  python scripts/gen_column_map_page.py <PANEL> # richer, local only
 
 Usage:
     python scripts/gen_column_map_v10.py [export.csv] [template.mmx]

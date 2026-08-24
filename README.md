@@ -26,7 +26,7 @@ it is the canonical entry point and routes every topic to a single source-of-tru
 |---|---|
 | Understand how a recording becomes analysis-ready, and what every column means | [`docs/INGESTION_AND_TIMEBASE.md`](docs/INGESTION_AND_TIMEBASE.md) |
 | Understand binning, statistics, effective-N, and the output shapes | [`docs/EXPORT_AND_BINNING.md`](docs/EXPORT_AND_BINNING.md) |
-| Look up one specific column by name | [`docs/COLUMN_MAP_V10_RESEARCH_TRENDS.csv`](docs/COLUMN_MAP_V10_RESEARCH_TRENDS.csv) (`.html` to read in a browser) |
+| Look up one specific column by name | [`docs/COLUMN_MAP_V10_RESEARCH_TRENDS.md`](docs/COLUMN_MAP_V10_RESEARCH_TRENDS.md) — renders on GitHub; `.csv`/`.json` hold all 34 fields |
 | Onboard as a fresh contributor | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) |
 | Onboard as a PI / statistician | [`docs/ONBOARDING_PI.md`](docs/ONBOARDING_PI.md) |
 | Understand Persyst panels, instruments, engines | [`docs/PERSYST_V10_REFERENCE.md`](docs/PERSYST_V10_REFERENCE.md) |
